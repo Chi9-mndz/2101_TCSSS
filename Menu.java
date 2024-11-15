@@ -27,6 +27,13 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel7 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         IceCoffee = new javax.swing.JButton();
         Frapuccino = new javax.swing.JButton();
@@ -34,26 +41,215 @@ public class Menu extends javax.swing.JFrame {
         Pastries = new javax.swing.JButton();
         Milktea = new javax.swing.JButton();
         ComboMeals = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel169 = new javax.swing.JLabel();
+        jLabel170 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jButton12 = new javax.swing.JButton();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jButton13 = new javax.swing.JButton();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jButton14 = new javax.swing.JButton();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jButton15 = new javax.swing.JButton();
+        jLabel83 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jButton16 = new javax.swing.JButton();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jButton17 = new javax.swing.JButton();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jButton18 = new javax.swing.JButton();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        jButton19 = new javax.swing.JButton();
+        jLabel100 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel104 = new javax.swing.JLabel();
+        jButton20 = new javax.swing.JButton();
+        jLabel105 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabel108 = new javax.swing.JLabel();
+        jButton21 = new javax.swing.JButton();
+        jLabel109 = new javax.swing.JLabel();
+        jLabel110 = new javax.swing.JLabel();
+        jLabel111 = new javax.swing.JLabel();
+        jLabel112 = new javax.swing.JLabel();
+        jLabel113 = new javax.swing.JLabel();
+        jButton22 = new javax.swing.JButton();
+        jLabel114 = new javax.swing.JLabel();
+        jLabel115 = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
+        jLabel117 = new javax.swing.JLabel();
+        jButton23 = new javax.swing.JButton();
+        jLabel118 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        jLabel120 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel121 = new javax.swing.JLabel();
+        jLabel122 = new javax.swing.JLabel();
+        jLabel123 = new javax.swing.JLabel();
+        jButton24 = new javax.swing.JButton();
+        jLabel125 = new javax.swing.JLabel();
+        jButton25 = new javax.swing.JButton();
+        jLabel126 = new javax.swing.JLabel();
+        jLabel127 = new javax.swing.JLabel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
+        jLabel130 = new javax.swing.JLabel();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jLabel131 = new javax.swing.JLabel();
+        jLabel132 = new javax.swing.JLabel();
+        jLabel133 = new javax.swing.JLabel();
+        jLabel134 = new javax.swing.JLabel();
+        jLabel135 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        jButton28 = new javax.swing.JButton();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel138 = new javax.swing.JLabel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        jLabel143 = new javax.swing.JLabel();
+        jLabel144 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        jLabel124 = new javax.swing.JLabel();
+        jLabel145 = new javax.swing.JLabel();
+        jLabel146 = new javax.swing.JLabel();
+        jButton29 = new javax.swing.JButton();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        jLabel151 = new javax.swing.JLabel();
+        jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel152 = new javax.swing.JLabel();
+        jLabel153 = new javax.swing.JLabel();
+        jLabel154 = new javax.swing.JLabel();
+        jLabel155 = new javax.swing.JLabel();
+        jButton33 = new javax.swing.JButton();
+        jLabel156 = new javax.swing.JLabel();
+        jLabel157 = new javax.swing.JLabel();
+        jLabel158 = new javax.swing.JLabel();
+        jLabel159 = new javax.swing.JLabel();
+        jLabel160 = new javax.swing.JLabel();
+        jButton34 = new javax.swing.JButton();
+        jButton35 = new javax.swing.JButton();
+        jLabel161 = new javax.swing.JLabel();
+        jLabel162 = new javax.swing.JLabel();
+        jLabel163 = new javax.swing.JLabel();
+        jButton36 = new javax.swing.JButton();
+        jButton37 = new javax.swing.JButton();
+        jLabel164 = new javax.swing.JLabel();
+        jLabel165 = new javax.swing.JLabel();
+        jLabel166 = new javax.swing.JLabel();
+        jLabel167 = new javax.swing.JLabel();
+        jLabel168 = new javax.swing.JLabel();
+        jButton38 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -69,222 +265,11 @@ public class Menu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        IceCoffee.setText("Ice Coffee");
-        IceCoffee.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IceCoffeeActionPerformed(evt);
-            }
-        });
-
-        Frapuccino.setText("Frapuccino");
-        Frapuccino.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FrapuccinoActionPerformed(evt);
-            }
-        });
-
-        HotCoffee.setText("Hot Coffee");
-        HotCoffee.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HotCoffeeActionPerformed(evt);
-            }
-        });
-
-        Pastries.setText("Pastries");
-        Pastries.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PastriesActionPerformed(evt);
-            }
-        });
-
-        Milktea.setText("Milktea");
-        Milktea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MilkteaActionPerformed(evt);
-            }
-        });
-
-        ComboMeals.setText("Combo Meals");
-        ComboMeals.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComboMealsActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Milktea)
-                            .addComponent(HotCoffee)
-                            .addComponent(IceCoffee)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(Pastries)
-                                .addComponent(Frapuccino))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(ComboMeals)))
-                .addContainerGap(10, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(HotCoffee)
-                .addGap(37, 37, 37)
-                .addComponent(IceCoffee)
-                .addGap(33, 33, 33)
-                .addComponent(Frapuccino)
-                .addGap(39, 39, 39)
-                .addComponent(Milktea)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addComponent(Pastries)
-                .addGap(77, 77, 77)
-                .addComponent(ComboMeals)
-                .addGap(218, 218, 218))
-        );
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 120, 630));
-
-        jTabbedPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MENU", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Palatino Linotype", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
-        jTabbedPane2.setTabPlacement(javax.swing.JTabbedPane.BOTTOM);
-
-        jLabel2.setText("HOT COFFEEEE");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(503, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(134, 134, 134)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(428, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("", jPanel4);
-
-        jLabel3.setText("ICE COFFEE");
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(181, 181, 181)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(374, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(175, 175, 175)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(337, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("", jPanel5);
-
-        jLabel4.setText("MILKSHAKES");
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(351, 351, 351)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(206, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(148, 148, 148)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(311, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("", jPanel6);
-
-        jLabel5.setText("MILKTEA");
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(294, 294, 294)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(308, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(158, 158, 158)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(369, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("", jPanel8);
-
-        jLabel6.setText("PASTRIES");
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(231, 231, 231)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(336, Short.MAX_VALUE))
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(166, 166, 166)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(332, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("", jPanel9);
-
-        jLabel7.setText("COMBO MEALS");
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(272, 272, 272)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(317, Short.MAX_VALUE))
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(162, 162, 162)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(307, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("", jPanel10);
-
-        getContentPane().add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 760, 670));
-
+        jPanel2.setBackground(new java.awt.Color(223, 216, 205));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true), "Reciept", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Mongolian Baiti", 1, 24))); // NOI18N
         jPanel2.setAlignmentX(0.7F);
 
+        jTable1.setBackground(new java.awt.Color(223, 216, 205));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -293,9 +278,12 @@ public class Menu extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "PRODUCT ID", "NAME", "QUANTITY", "PRICE"
             }
         ));
+        jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        jTable1.setShowGrid(false);
+        jTable1.setShowHorizontalLines(false);
         jScrollPane1.setViewportView(jTable1);
 
         jLabel8.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
@@ -313,7 +301,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -321,21 +309,1148 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 150, 310, 460));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 150, 340, 460));
+
+        jPanel3.setBackground(new java.awt.Color(77, 0, 0));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Modern No. 20", 3, 48)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(223, 216, 205));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("La Casa del Espresso");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 490, 50));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 490, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1330, 770));
+        jPanel1.setBackground(new java.awt.Color(24, 57, 43));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(223, 216, 205), 2, true));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        IceCoffee.setBackground(new java.awt.Color(223, 216, 205));
+        IceCoffee.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        IceCoffee.setText("ICE COFFEES");
+        IceCoffee.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        IceCoffee.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        IceCoffee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IceCoffeeActionPerformed(evt);
+            }
+        });
+        jPanel1.add(IceCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 120, 30));
+
+        Frapuccino.setBackground(new java.awt.Color(223, 216, 205));
+        Frapuccino.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        Frapuccino.setText("FRAPPUCCINO");
+        Frapuccino.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        Frapuccino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FrapuccinoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Frapuccino, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 120, -1));
+
+        HotCoffee.setBackground(new java.awt.Color(223, 216, 205));
+        HotCoffee.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        HotCoffee.setText("HOT COFFEES");
+        HotCoffee.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        HotCoffee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HotCoffeeActionPerformed(evt);
+            }
+        });
+        jPanel1.add(HotCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 120, 30));
+
+        Pastries.setBackground(new java.awt.Color(223, 216, 205));
+        Pastries.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        Pastries.setText("PASTRIES");
+        Pastries.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        Pastries.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PastriesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Pastries, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, 120, -1));
+
+        Milktea.setBackground(new java.awt.Color(223, 216, 205));
+        Milktea.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        Milktea.setText("MILKTEA");
+        Milktea.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        Milktea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MilkteaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Milktea, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 120, -1));
+
+        ComboMeals.setBackground(new java.awt.Color(223, 216, 205));
+        ComboMeals.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        ComboMeals.setText("COMBO MEALS");
+        ComboMeals.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        ComboMeals.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboMealsActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ComboMeals, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 690, 120, 30));
+
+        jLabel1.setBackground(new java.awt.Color(223, 216, 205));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MENU6.png"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, 100, 80));
+
+        jLabel10.setBackground(new java.awt.Color(223, 216, 205));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MENU.png"))); // NOI18N
+        jLabel10.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 100, 70));
+
+        jLabel11.setBackground(new java.awt.Color(223, 216, 205));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu2.png"))); // NOI18N
+        jLabel11.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 100, 70));
+
+        jLabel12.setBackground(new java.awt.Color(223, 216, 205));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu3.png"))); // NOI18N
+        jLabel12.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 100, 80));
+
+        jLabel13.setBackground(new java.awt.Color(223, 216, 205));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MENU4.png"))); // NOI18N
+        jLabel13.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 100, 70));
+
+        jLabel14.setBackground(new java.awt.Color(223, 216, 205));
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu5.png"))); // NOI18N
+        jLabel14.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 100, 70));
+
+        jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 140, 730));
+
+        jTabbedPane2.setBackground(new java.awt.Color(223, 216, 205));
+        jTabbedPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MENU", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Palatino Linotype", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        jTabbedPane2.setTabPlacement(javax.swing.JTabbedPane.BOTTOM);
+        jTabbedPane2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+
+        jPanel4.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel2.setText("-FLAT WHITES");
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 170, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof2.png"))); // NOI18N
+        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, 90));
+
+        jLabel16.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel16.setText("-MACHIATOS");
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 180, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof3.png"))); // NOI18N
+        jLabel17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, 90));
+
+        jButton1.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
+        jButton1.setText("HONEY ALMOND MILK");
+        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, 140, -1));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel18.setText("and a velvety milk foam topping.");
+        jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 160, 20));
+
+        jButton2.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton2.setText("ESPRESSO MACCHIATO");
+        jButton2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 560, 160, 20));
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel19.setText("120 Calories");
+        jPanel4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 490, 70, 20));
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel20.setText("topped with perfectly steamed milk.");
+        jPanel4.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 210, 20));
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel21.setText("190 Calories");
+        jPanel4.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 70, 20));
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel22.setText("ground coffee beans.");
+        jPanel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 160, 20));
+
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel23.setText("creamy steamed almond milk for a nutty, aromatic twist.");
+        jPanel4.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 530, 270, 20));
+
+        jLabel24.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel24.setText("-CAPPUCCINOS");
+        jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 170, -1));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof1.png"))); // NOI18N
+        jLabel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, 90));
+
+        jButton3.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
+        jButton3.setText("CAPPUCCINO");
+        jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 130, -1));
+
+        jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel26.setText("140 Calories");
+        jPanel4.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 70, 20));
+
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel27.setText("-Blend of bold espresso, steamed milk,");
+        jPanel4.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 190, 20));
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel28.setText("-Velvety smooth espresso-based coffee");
+        jPanel4.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 190, 20));
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof2.png"))); // NOI18N
+        jLabel29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, 90));
+
+        jButton4.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
+        jButton4.setText("FLAT WHITE");
+        jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 130, -1));
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel30.setText("170 Calories");
+        jPanel4.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 70, 20));
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel31.setText("topped with a thin layer of silky steamed milk");
+        jPanel4.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 220, 20));
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel32.setText("-A smooth and velvety espresso-based coffee,");
+        jPanel4.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 510, 220, 20));
+
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel33.setText("delicately sweetened with honey and topped with");
+        jPanel4.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 240, 20));
+
+        jLabel34.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel34.setText("-AMERICANOS");
+        jPanel4.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, -1));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof.png"))); // NOI18N
+        jLabel35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof5.png"))); // NOI18N
+        jLabel36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, -1, 90));
+
+        jButton5.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton5.setText("CAFFE AMERICANO");
+        jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 150, -1));
+
+        jButton6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton6.setText("CAFFE LATTE");
+        jButton6.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 130, -1));
+
+        jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel37.setText("15 Calories");
+        jPanel4.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 70, 20));
+
+        jLabel38.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel38.setText("-Shots of espresso using freshly ");
+        jPanel4.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 160, 20));
+
+        jLabel39.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel39.setText("-Espresso and steamed milk, topped");
+        jPanel4.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 180, 20));
+
+        jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel40.setText("190 Calories");
+        jPanel4.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 470, 70, 20));
+
+        jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel41.setText("featuring espresso, steamed milk, and a ");
+        jPanel4.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, 200, 20));
+
+        jLabel42.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel42.setText("-Creamy espresso-based coffee infused");
+        jPanel4.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 200, 20));
+
+        jLabel43.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel43.setText("with the delicate sweetness of vanilla syrup,");
+        jPanel4.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 210, 20));
+
+        jLabel44.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel44.setText("-LATTES");
+        jPanel4.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 180, -1));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof3.png"))); // NOI18N
+        jLabel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, -1, 90));
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof4.png"))); // NOI18N
+        jLabel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel4.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, -1, 90));
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel47.setText("190 Calories");
+        jPanel4.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 50, 70, 20));
+
+        jLabel48.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel48.setText("190 Calories");
+        jPanel4.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, 70, 20));
+
+        jLabel49.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel49.setText("with a light layer of froth.");
+        jPanel4.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, 180, 20));
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel50.setText("-A deliciously sweet and creamy coffee drink");
+        jPanel4.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 210, 20));
+
+        jButton7.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton7.setText("VANILLA LATTE");
+        jButton7.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 130, -1));
+
+        jButton8.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton8.setText("CARAMEL MACCHIATO");
+        jButton8.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jPanel4.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 430, 150, -1));
+
+        jLabel149.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel149.setText("rich caramel flavor.");
+        jPanel4.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 370, 180, 20));
+
+        jLabel169.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel169.setText("of foamed milk.");
+        jPanel4.add(jLabel169, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 80, 20));
+
+        jLabel170.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel170.setText("-A shot of espresso, topped with a dollop ");
+        jPanel4.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 490, 200, 20));
+
+        jTabbedPane2.addTab("HC", jPanel4);
+
+        jPanel5.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel51.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel51.setText("-ICED MACCHIATOS");
+        jPanel5.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 230, -1));
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hcof6.png"))); // NOI18N
+        jLabel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, 90));
+
+        jLabel53.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel53.setText("250 Calories");
+        jPanel5.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 500, 70, 20));
+
+        jLabel54.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel54.setText("brewed coffee.");
+        jPanel5.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 80, 20));
+
+        jButton9.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton9.setText("ICED CARAMEL MACCHIATO");
+        jButton9.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 590, 180, -1));
+
+        jLabel55.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel55.setText("chocolate sauce, espresso, and cold milk.");
+        jPanel5.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 210, 20));
+
+        jLabel56.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel56.setText("-ICED LATTES");
+        jPanel5.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 180, -1));
+
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof4.png"))); // NOI18N
+        jLabel57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, 90));
+
+        jLabel58.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel58.setText("190 Calories");
+        jPanel5.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, 70, 20));
+
+        jLabel59.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel59.setText("with chilled water and ice.");
+        jPanel5.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 190, 20));
+
+        jButton10.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton10.setText("ICE VANILLA LATTE");
+        jButton10.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, 140, -1));
+
+        jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel60.setText("vanilla sweetness.");
+        jPanel5.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 90, 20));
+
+        jLabel61.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel61.setText("-ICED COFFEES");
+        jPanel5.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 230, -1));
+
+        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof1.png"))); // NOI18N
+        jLabel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, 90));
+
+        jLabel63.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel63.setText("5 Calories");
+        jPanel5.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 70, 20));
+
+        jLabel64.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel64.setText("-A classic cold brew made with freshly");
+        jPanel5.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 190, 20));
+
+        jButton11.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton11.setText("ICED COFFEE");
+        jButton11.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 120, -1));
+
+        jLabel65.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel65.setText("cold milk, and topped with a rich caramel drizzle.");
+        jPanel5.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 530, 240, 20));
+
+        jLabel66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof2.png"))); // NOI18N
+        jLabel66.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, -1, 90));
+
+        jLabel67.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel67.setText("100 Calories");
+        jPanel5.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 70, 20));
+
+        jLabel68.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel68.setText("-Blend of espresso, ice, and");
+        jPanel5.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 140, 20));
+
+        jButton12.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton12.setText("ICED SHAKEN ESPRESSO");
+        jButton12.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 160, -1));
+
+        jLabel70.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel70.setText("-Iced espresso drink, layered with vanilla syrup, ");
+        jPanel5.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 230, 20));
+
+        jLabel69.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel69.setText("-ICED AMERICANOS");
+        jPanel5.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 230, -1));
+
+        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof.png"))); // NOI18N
+        jLabel71.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
+
+        jButton13.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton13.setText("ICED CAFFE AMERICANO");
+        jButton13.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, -1));
+
+        jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel72.setText("15 Calories");
+        jPanel5.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 70, 20));
+
+        jLabel73.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel73.setText("-Bold espresso-based coffee blended");
+        jPanel5.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 190, 20));
+
+        jLabel74.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel74.setText("-ICED MOCHAS");
+        jPanel5.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 180, -1));
+
+        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof3.png"))); // NOI18N
+        jLabel75.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, -1, 90));
+
+        jLabel76.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel76.setText("390 Calories");
+        jPanel5.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 70, 20));
+
+        jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel77.setText("caramel syrup, served over ice.");
+        jPanel5.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, 190, 20));
+
+        jButton14.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton14.setText("ICED WHITE CHOCOLATE MOCHA");
+        jButton14.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, 210, -1));
+
+        jLabel78.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel78.setText("-Iced coffee drink made with rich white");
+        jPanel5.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, 190, 20));
+
+        jLabel79.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel79.setText("served over ice and topped with cold milk.");
+        jPanel5.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 210, 20));
+
+        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof4.png"))); // NOI18N
+        jLabel80.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel5.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, -1, 90));
+
+        jLabel81.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel81.setText("400 Calories");
+        jPanel5.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 70, 20));
+
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel82.setText("-Blend of espresso, cold milk, and rich ");
+        jPanel5.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 190, 20));
+
+        jButton15.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton15.setText("ICED CARAMEL LATTE");
+        jButton15.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 140, -1));
+
+        jLabel83.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel83.setText("-Espresso drink infused with vanilla syrup, ");
+        jPanel5.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 210, 20));
+
+        jTabbedPane2.addTab("IC", jPanel5);
+
+        jPanel6.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel84.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel84.setText("-CREME FRAPPUCCINO");
+        jPanel6.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 260, -1));
+
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof6.png"))); // NOI18N
+        jLabel85.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, 90));
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel86.setText("370 Calories");
+        jPanel6.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 70, 20));
+
+        jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel87.setText("a sprinkle of cookie bits.");
+        jPanel6.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 210, 20));
+
+        jButton16.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton16.setText("MOCHA");
+        jButton16.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 120, -1));
+
+        jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel88.setText("and milk, topped with whipped cream.");
+        jPanel6.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 210, 20));
+
+        jLabel89.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel89.setText("topped with whipped cream and a sprinkle ");
+        jPanel6.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 210, 20));
+
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof11.png"))); // NOI18N
+        jLabel90.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, -1, 90));
+
+        jButton17.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton17.setText("CARAMEL CREME FRAPPUCCINO");
+        jButton17.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 530, 200, -1));
+
+        jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel91.setText("480 Calories");
+        jPanel6.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 70, 20));
+
+        jLabel92.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel92.setText("-Mocha flavor with crunchy cookie crumbles,");
+        jPanel6.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 210, 20));
+
+        jLabel93.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel93.setText("with whipped cream.");
+        jPanel6.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 100, 20));
+
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof5.png"))); // NOI18N
+        jLabel94.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, 90));
+
+        jButton18.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton18.setText("CAFFE VANILLA ");
+        jButton18.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 140, -1));
+
+        jLabel95.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel95.setText("420 Calories");
+        jPanel6.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 70, 20));
+
+        jLabel96.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel96.setText("topped with whipped cream.");
+        jPanel6.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 160, 20));
+
+        jLabel97.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel97.setText("topped with whipped cream.");
+        jPanel6.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 170, 20));
+
+        jLabel98.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel98.setText("espresso, and a creamy texture, topped");
+        jPanel6.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 200, 20));
+
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof9.png"))); // NOI18N
+        jLabel99.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 90));
+
+        jButton19.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton19.setText("JAVA CHIP");
+        jButton19.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 120, -1));
+
+        jLabel100.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel100.setText("440 Calories");
+        jPanel6.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 70, 20));
+
+        jLabel101.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel101.setText("-Coffee drink with rich chocolate chips,");
+        jPanel6.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 210, 20));
+
+        jLabel102.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel102.setText("-Espresso, chocolate syrup, and ice, ");
+        jPanel6.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, 170, 20));
+
+        jLabel103.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel103.setText("-COFFEE FRAPPUCCINO");
+        jPanel6.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 260, -1));
+
+        jLabel104.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof.png"))); // NOI18N
+        jLabel104.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
+
+        jButton20.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton20.setText("MOCHA COOKIE CRUMBLE");
+        jButton20.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, -1));
+
+        jLabel105.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel105.setText("-Espresso drink with rich vanilla flavor, ice, ");
+        jPanel6.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 210, 20));
+
+        jLabel106.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel106.setText("410 Calories");
+        jPanel6.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 70, 20));
+
+        jLabel107.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel107.setText("and more cookie crumbles.");
+        jPanel6.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 190, 20));
+
+        jLabel108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof7.png"))); // NOI18N
+        jLabel108.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, -1, 90));
+
+        jButton21.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton21.setText("STRAWBERRY CREME");
+        jButton21.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 170, -1));
+
+        jLabel109.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel109.setText("370 Calories");
+        jPanel6.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 70, 20));
+
+        jLabel110.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel110.setText("-Strawberry flavor, milk, and ice, ");
+        jPanel6.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 160, 20));
+
+        jLabel111.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel111.setText("topped with whipped cream.");
+        jPanel6.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 340, 210, 20));
+
+        jLabel112.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel112.setText("espresso, topped with whipped cream ");
+        jPanel6.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 190, 20));
+
+        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof8.png"))); // NOI18N
+        jLabel113.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, -1, 90));
+
+        jButton22.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton22.setText("CHOCOLATE COOKIEE CRUMBLE");
+        jButton22.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 210, -1));
+
+        jLabel114.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel114.setText("460 Calories");
+        jPanel6.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, 70, 20));
+
+        jLabel115.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel115.setText("-Chocolate cookies, rich mocha flavor, and ");
+        jPanel6.add(jLabel115, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 210, 20));
+
+        jLabel116.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel116.setText("with whipped cream and a drizzle of caramel.");
+        jPanel6.add(jLabel116, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 470, 230, 20));
+
+        jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof10.png"))); // NOI18N
+        jLabel117.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel6.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, -1, 90));
+
+        jButton23.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton23.setText("WHITE CHOCOLATE CREME");
+        jButton23.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 180, -1));
+
+        jLabel118.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel118.setText("350 Calories");
+        jPanel6.add(jLabel118, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, 70, 20));
+
+        jLabel119.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel119.setText("-Rich white chocolate flavor, ice, and milk,");
+        jPanel6.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 330, 210, 20));
+
+        jLabel120.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel120.setText("-Rich caramel flavor, milk, and ice, topped ");
+        jPanel6.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 210, 20));
+
+        jTabbedPane2.addTab("F", jPanel6);
+
+        jPanel8.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel121.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel121.setText("-MILKTEAS");
+        jPanel8.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, -1));
+
+        jLabel122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M4.png"))); // NOI18N
+        jLabel122.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel8.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, 90));
+
+        jLabel123.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel123.setText("350 Calories");
+        jPanel8.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 180, 70, 20));
+
+        jButton24.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton24.setText("CRISP AND CREME DELIGHT");
+        jButton24.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 170, -1));
+
+        jLabel125.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M.png"))); // NOI18N
+        jLabel125.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel8.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
+
+        jButton25.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton25.setText("DARK CHOCO TRIO");
+        jButton25.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, -1));
+
+        jLabel126.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel126.setText("170 Calories");
+        jPanel8.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 70, 20));
+
+        jLabel127.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel127.setText("deep, caramelized flavor.  ");
+        jPanel8.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 210, 20));
+
+        jLabel128.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M1.png"))); // NOI18N
+        jLabel128.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel8.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, 90));
+
+        jLabel129.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M2.png"))); // NOI18N
+        jLabel129.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel8.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, 90));
+
+        jLabel130.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M3.png"))); // NOI18N
+        jLabel130.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel8.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, -1, 90));
+
+        jButton26.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton26.setText("BROWN SUGAR VELVET");
+        jButton26.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 170, -1));
+
+        jButton27.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton27.setText("LUXE CREME DELIGHT");
+        jButton27.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 170, -1));
+
+        jLabel131.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel131.setText("370 Calories");
+        jPanel8.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 70, 20));
+
+        jLabel132.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel132.setText("450 Calories");
+        jPanel8.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 70, 20));
+
+        jLabel133.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel133.setText("150 Calories");
+        jPanel8.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, 70, 20));
+
+        jLabel134.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel134.setText("-Brown sugar syrup, offering a smooth, caramelized ");
+        jPanel8.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 250, 20));
+
+        jLabel135.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel135.setText("flavor of cheesecake.");
+        jPanel8.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 490, 220, 20));
+
+        jLabel136.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel136.setText("-A rich and creamy milk tea infused with the decadent ");
+        jPanel8.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 260, 20));
+
+        jButton28.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton28.setText("SUENO DE MATCHA");
+        jButton28.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 170, -1));
+
+        jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel137.setText("-A rich dark chocolate milk tea sweetened ");
+        jPanel8.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 210, 20));
+
+        jLabel138.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel138.setText("with warm brown sugar syrup, giving it a");
+        jPanel8.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 210, 20));
+
+        jLabel139.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel139.setText("ice for a refreshing indulgence.  ");
+        jPanel8.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 210, 20));
+
+        jLabel140.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel140.setText("flavor paired with black tea and milk, served over");
+        jPanel8.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 240, 20));
+
+        jLabel141.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel141.setText("-High-quality matcha powder, offering a perfect balance ");
+        jPanel8.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 280, 20));
+
+        jLabel142.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel142.setText("of earthy matcha flavor and rich, velvety milk.");
+        jPanel8.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 220, 20));
+
+        jLabel143.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel143.setText("-Creamy texture of milk tea with the rich ");
+        jPanel8.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 190, 20));
+
+        jLabel144.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel144.setText("rich flavor of chocolate cookies and cream.");
+        jPanel8.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 210, 20));
+
+        jTabbedPane2.addTab("M", jPanel8);
+
+        jPanel9.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel124.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel124.setText("-CUPCAKES");
+        jPanel9.add(jLabel124, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 340, 130, -1));
+
+        jLabel145.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P3.png"))); // NOI18N
+        jLabel145.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, 90));
+
+        jLabel146.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel146.setText("170 Calories");
+        jPanel9.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 510, 70, 20));
+
+        jButton29.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton29.setText("CHRISTMAS TREE COOKIEE");
+        jButton29.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 170, 20));
+
+        jLabel148.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel148.setText("-BREAKFAST SANDWICHES");
+        jPanel9.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 300, -1));
+
+        jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P1.png"))); // NOI18N
+        jLabel150.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 90));
+
+        jLabel151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P4.png"))); // NOI18N
+        jLabel151.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, 90));
+
+        jButton30.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton30.setText("BLUEBERRY CUPCAKE");
+        jButton30.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 160, 20));
+
+        jButton31.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton31.setText("SANTA'S COOKIEE");
+        jButton31.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 160, 20));
+
+        jButton32.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton32.setText("DOUBLE CHOCOLATE BROWNIES");
+        jButton32.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 220, 20));
+
+        jLabel147.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel147.setText("170 Calories");
+        jPanel9.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 70, 20));
+
+        jLabel152.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel152.setText("170 Calories");
+        jPanel9.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 70, 20));
+
+        jLabel153.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel153.setText("170 Calories");
+        jPanel9.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 70, 20));
+
+        jLabel154.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P2.png"))); // NOI18N
+        jLabel154.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, -1, 90));
+
+        jLabel155.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel155.setText("170 Calories");
+        jPanel9.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 70, 20));
+
+        jButton33.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton33.setText("CHOCOLATE CHIP COOKIEE");
+        jButton33.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 530, 180, 20));
+
+        jLabel156.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel156.setText("-BAKERY");
+        jPanel9.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 110, -1));
+
+        jLabel157.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P.png"))); // NOI18N
+        jLabel157.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
+
+        jLabel158.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel158.setText("170 Calories");
+        jPanel9.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 70, 20));
+
+        jLabel159.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel159.setText("170 Calories");
+        jPanel9.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 70, 20));
+
+        jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P5.png"))); // NOI18N
+        jLabel160.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 40, -1, 90));
+
+        jButton34.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton34.setText("EGG, PESTO AND MOZZARELLLA ");
+        jButton34.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 210, 20));
+
+        jButton35.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton35.setText("BAKED MANGO CROISSANT");
+        jButton35.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 80, 180, 20));
+
+        jLabel161.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P6.png"))); // NOI18N
+        jLabel161.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel161, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, -1, 90));
+
+        jLabel162.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P7.png"))); // NOI18N
+        jLabel162.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel162, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, -1, 90));
+
+        jLabel163.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel163.setText("170 Calories");
+        jPanel9.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 160, 70, 20));
+
+        jButton36.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton36.setText("BUTTER CROISSANT");
+        jButton36.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 160, 20));
+
+        jButton37.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton37.setText("CHOCOLATE CROISSANT");
+        jButton37.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 160, 20));
+
+        jLabel164.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel164.setText("-CROISSANTS");
+        jPanel9.add(jLabel164, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 10, 150, -1));
+
+        jLabel165.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel165.setText("170 Calories");
+        jPanel9.add(jLabel165, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 260, 70, 20));
+
+        jLabel166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P8.png"))); // NOI18N
+        jLabel166.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel166, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, -1, 90));
+
+        jLabel167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P9.png"))); // NOI18N
+        jLabel167.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel9.add(jLabel167, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, -1, 90));
+
+        jLabel168.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel168.setText("170 Calories");
+        jPanel9.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, 70, 20));
+
+        jButton38.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton38.setText("RED VELVET CUPCAKE");
+        jButton38.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 160, 20));
+
+        jTabbedPane2.addTab("P", jPanel9);
+
+        jPanel10.setBackground(new java.awt.Color(223, 216, 205));
+
+        jLabel7.setText("COMBO MEALS");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(272, 272, 272)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(327, Short.MAX_VALUE))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(337, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("CM", jPanel10);
+
+        jPanel3.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, -1, 700));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1330, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -344,11 +1459,6 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         jTabbedPane2.setSelectedIndex(5);
     }//GEN-LAST:event_ComboMealsActionPerformed
-
-    private void HotCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HotCoffeeActionPerformed
-                // TODO add your handling code here:
-                jTabbedPane2.setSelectedIndex(0);
-    }//GEN-LAST:event_HotCoffeeActionPerformed
 
     private void IceCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IceCoffeeActionPerformed
         // TODO add your handling code here:
@@ -369,6 +1479,131 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         jTabbedPane2.setSelectedIndex(4);
     }//GEN-LAST:event_PastriesActionPerformed
+
+    private void HotCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HotCoffeeActionPerformed
+        // TODO add your handling code here:
+        jTabbedPane2.setSelectedIndex(0);
+    }//GEN-LAST:event_HotCoffeeActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton38ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -412,18 +1647,214 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton IceCoffee;
     private javax.swing.JButton Milktea;
     private javax.swing.JButton Pastries;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton37;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
+    private javax.swing.JLabel jLabel111;
+    private javax.swing.JLabel jLabel112;
+    private javax.swing.JLabel jLabel113;
+    private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel150;
+    private javax.swing.JLabel jLabel151;
+    private javax.swing.JLabel jLabel152;
+    private javax.swing.JLabel jLabel153;
+    private javax.swing.JLabel jLabel154;
+    private javax.swing.JLabel jLabel155;
+    private javax.swing.JLabel jLabel156;
+    private javax.swing.JLabel jLabel157;
+    private javax.swing.JLabel jLabel158;
+    private javax.swing.JLabel jLabel159;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel160;
+    private javax.swing.JLabel jLabel161;
+    private javax.swing.JLabel jLabel162;
+    private javax.swing.JLabel jLabel163;
+    private javax.swing.JLabel jLabel164;
+    private javax.swing.JLabel jLabel165;
+    private javax.swing.JLabel jLabel166;
+    private javax.swing.JLabel jLabel167;
+    private javax.swing.JLabel jLabel168;
+    private javax.swing.JLabel jLabel169;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel170;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
