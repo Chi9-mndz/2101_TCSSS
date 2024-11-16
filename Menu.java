@@ -97,6 +97,14 @@ public class Menu extends javax.swing.JFrame {
         jLabel149 = new javax.swing.JLabel();
         jLabel169 = new javax.swing.JLabel();
         jLabel170 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel179 = new javax.swing.JLabel();
+        jLabel192 = new javax.swing.JLabel();
+        jLabel193 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel51 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
@@ -138,6 +146,13 @@ public class Menu extends javax.swing.JFrame {
         jLabel82 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
         jLabel83 = new javax.swing.JLabel();
+        jLabel194 = new javax.swing.JLabel();
+        jLabel195 = new javax.swing.JLabel();
+        jLabel196 = new javax.swing.JLabel();
+        jLabel197 = new javax.swing.JLabel();
+        jLabel198 = new javax.swing.JLabel();
+        jLabel199 = new javax.swing.JLabel();
+        jLabel200 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel84 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
@@ -184,6 +199,14 @@ public class Menu extends javax.swing.JFrame {
         jLabel118 = new javax.swing.JLabel();
         jLabel119 = new javax.swing.JLabel();
         jLabel120 = new javax.swing.JLabel();
+        jLabel201 = new javax.swing.JLabel();
+        jLabel202 = new javax.swing.JLabel();
+        jLabel203 = new javax.swing.JLabel();
+        jLabel204 = new javax.swing.JLabel();
+        jLabel205 = new javax.swing.JLabel();
+        jLabel206 = new javax.swing.JLabel();
+        jLabel207 = new javax.swing.JLabel();
+        jLabel208 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel121 = new javax.swing.JLabel();
         jLabel122 = new javax.swing.JLabel();
@@ -213,6 +236,11 @@ public class Menu extends javax.swing.JFrame {
         jLabel142 = new javax.swing.JLabel();
         jLabel143 = new javax.swing.JLabel();
         jLabel144 = new javax.swing.JLabel();
+        jLabel209 = new javax.swing.JLabel();
+        jLabel210 = new javax.swing.JLabel();
+        jLabel211 = new javax.swing.JLabel();
+        jLabel212 = new javax.swing.JLabel();
+        jLabel213 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel124 = new javax.swing.JLabel();
         jLabel145 = new javax.swing.JLabel();
@@ -249,7 +277,46 @@ public class Menu extends javax.swing.JFrame {
         jLabel168 = new javax.swing.JLabel();
         jButton38 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel171 = new javax.swing.JLabel();
+        jLabel172 = new javax.swing.JLabel();
+        jLabel173 = new javax.swing.JLabel();
+        jButton39 = new javax.swing.JButton();
+        jLabel174 = new javax.swing.JLabel();
+        jLabel175 = new javax.swing.JLabel();
+        jLabel176 = new javax.swing.JLabel();
+        jLabel177 = new javax.swing.JLabel();
+        jLabel178 = new javax.swing.JLabel();
+        jLabel180 = new javax.swing.JLabel();
+        jLabel181 = new javax.swing.JLabel();
+        jLabel182 = new javax.swing.JLabel();
+        jButton40 = new javax.swing.JButton();
+        jLabel183 = new javax.swing.JLabel();
+        jLabel184 = new javax.swing.JLabel();
+        jLabel185 = new javax.swing.JLabel();
+        jButton41 = new javax.swing.JButton();
+        jLabel186 = new javax.swing.JLabel();
+        jLabel187 = new javax.swing.JLabel();
+        jButton42 = new javax.swing.JButton();
+        jLabel188 = new javax.swing.JLabel();
+        jLabel189 = new javax.swing.JLabel();
+        jButton43 = new javax.swing.JButton();
+        jLabel190 = new javax.swing.JLabel();
+        jLabel191 = new javax.swing.JLabel();
+        jButton44 = new javax.swing.JButton();
+        jLabel214 = new javax.swing.JLabel();
+        jLabel215 = new javax.swing.JLabel();
+        jLabel216 = new javax.swing.JLabel();
+        jLabel217 = new javax.swing.JLabel();
+        jLabel218 = new javax.swing.JLabel();
+        jLabel219 = new javax.swing.JLabel();
+        jLabel220 = new javax.swing.JLabel();
+        jLabel221 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jButton45 = new javax.swing.JButton();
+        jLabel222 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel223 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -283,13 +350,10 @@ public class Menu extends javax.swing.JFrame {
         ));
         jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
         jTable1.setShowGrid(false);
-        jTable1.setShowHorizontalLines(false);
         jScrollPane1.setViewportView(jTable1);
 
         jLabel8.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
         jLabel8.setText("Customer's Name:");
-
-        jTextField1.setText("jTextField1");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -318,11 +382,11 @@ public class Menu extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(77, 0, 0));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Modern No. 20", 3, 48)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Edwardian Script ITC", 3, 48)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(223, 216, 205));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("La Casa del Espresso");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 490, 50));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 490, 50));
 
         jPanel1.setBackground(new java.awt.Color(24, 57, 43));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(223, 216, 205), 2, true));
@@ -635,6 +699,46 @@ public class Menu extends javax.swing.JFrame {
         jLabel170.setText("-A shot of espresso, topped with a dollop ");
         jPanel4.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 490, 200, 20));
 
+        jLabel3.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("₱ 180.00");
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 520, 90, 30));
+
+        jLabel4.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("₱ 150.00");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 90, 30));
+
+        jLabel5.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("₱ 199.00");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 90, 30));
+
+        jLabel6.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("₱ 235.00");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 90, 30));
+
+        jLabel7.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("₱ 250.00");
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 550, 90, 30));
+
+        jLabel179.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel179.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel179.setText("₱ 199.00");
+        jPanel4.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 90, 30));
+
+        jLabel192.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel192.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel192.setText("₱ 210.00");
+        jPanel4.add(jLabel192, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 230, 90, 30));
+
+        jLabel193.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel193.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel193.setText("₱ 260.00");
+        jPanel4.add(jLabel193, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, 90, 30));
+
         jTabbedPane2.addTab("HC", jPanel4);
 
         jPanel5.setBackground(new java.awt.Color(223, 216, 205));
@@ -674,7 +778,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel56.setText("-ICED LATTES");
         jPanel5.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 180, -1));
 
-        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof4.png"))); // NOI18N
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Icecof12.png"))); // NOI18N
         jLabel57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel5.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, 90));
 
@@ -687,7 +791,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel5.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 190, 20));
 
         jButton10.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton10.setText("ICE VANILLA LATTE");
+        jButton10.setText("ICED VANILLA LATTE");
         jButton10.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -841,6 +945,41 @@ public class Menu extends javax.swing.JFrame {
         jLabel83.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel83.setText("-Espresso drink infused with vanilla syrup, ");
         jPanel5.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 210, 20));
+
+        jLabel194.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel194.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel194.setText("₱ 170.00");
+        jPanel5.add(jLabel194, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 90, 30));
+
+        jLabel195.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel195.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel195.setText("₱ 180.00");
+        jPanel5.add(jLabel195, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 90, 30));
+
+        jLabel196.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel196.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel196.setText("₱ 180.00");
+        jPanel5.add(jLabel196, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 90, 30));
+
+        jLabel197.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel197.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel197.setText("₱ 270.00");
+        jPanel5.add(jLabel197, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 550, 90, 30));
+
+        jLabel198.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel198.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel198.setText("₱ 199.00");
+        jPanel5.add(jLabel198, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 90, 30));
+
+        jLabel199.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel199.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel199.setText("₱ 260.00");
+        jPanel5.add(jLabel199, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 90, 30));
+
+        jLabel200.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel200.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel200.setText("₱ 199.00");
+        jPanel5.add(jLabel200, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, 90, 30));
 
         jTabbedPane2.addTab("IC", jPanel5);
 
@@ -1075,6 +1214,46 @@ public class Menu extends javax.swing.JFrame {
         jLabel120.setText("-Rich caramel flavor, milk, and ice, topped ");
         jPanel6.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 210, 20));
 
+        jLabel201.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel201.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel201.setText("₱ 160.00");
+        jPanel6.add(jLabel201, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 90, 30));
+
+        jLabel202.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel202.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel202.setText("₱ 250.00");
+        jPanel6.add(jLabel202, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 90, 30));
+
+        jLabel203.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel203.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel203.setText("₱ 350.00");
+        jPanel6.add(jLabel203, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 90, 30));
+
+        jLabel204.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel204.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel204.setText("₱ 299.00");
+        jPanel6.add(jLabel204, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 490, 90, 30));
+
+        jLabel205.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel205.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel205.setText("₱ 270.00");
+        jPanel6.add(jLabel205, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 90, 30));
+
+        jLabel206.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel206.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel206.setText("₱ 380.00");
+        jPanel6.add(jLabel206, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 230, 90, 30));
+
+        jLabel207.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel207.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel207.setText("₱ 380.00");
+        jPanel6.add(jLabel207, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 360, 90, 30));
+
+        jLabel208.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel208.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel208.setText("₱ 380.00");
+        jPanel6.add(jLabel208, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 490, 90, 30));
+
         jTabbedPane2.addTab("F", jPanel6);
 
         jPanel8.setBackground(new java.awt.Color(223, 216, 205));
@@ -1086,11 +1265,11 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M4.png"))); // NOI18N
         jLabel122.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-        jPanel8.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, 90));
+        jPanel8.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, -1, 90));
 
         jLabel123.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel123.setText("350 Calories");
-        jPanel8.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 180, 70, 20));
+        jPanel8.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, 70, 20));
 
         jButton24.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
         jButton24.setText("CRISP AND CREME DELIGHT");
@@ -1100,7 +1279,7 @@ public class Menu extends javax.swing.JFrame {
                 jButton24ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 170, -1));
+        jPanel8.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 170, -1));
 
         jLabel125.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M.png"))); // NOI18N
         jLabel125.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -1216,11 +1395,36 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel143.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel143.setText("-Creamy texture of milk tea with the rich ");
-        jPanel8.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 190, 20));
+        jPanel8.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 190, 20));
 
         jLabel144.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel144.setText("rich flavor of chocolate cookies and cream.");
-        jPanel8.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 210, 20));
+        jPanel8.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 80, 210, 20));
+
+        jLabel209.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel209.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel209.setText("₱ 180.00");
+        jPanel8.add(jLabel209, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 90, 30));
+
+        jLabel210.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel210.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel210.setText("₱ 140.00");
+        jPanel8.add(jLabel210, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 90, 30));
+
+        jLabel211.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel211.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel211.setText("₱ 250.00");
+        jPanel8.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 90, 30));
+
+        jLabel212.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel212.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel212.setText("₱ 250.00");
+        jPanel8.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 510, 90, 30));
+
+        jLabel213.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel213.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel213.setText("₱ 200.00");
+        jPanel8.add(jLabel213, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 90, 30));
 
         jTabbedPane2.addTab("M", jPanel8);
 
@@ -1426,29 +1630,226 @@ public class Menu extends javax.swing.JFrame {
         jTabbedPane2.addTab("P", jPanel9);
 
         jPanel10.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setText("COMBO MEALS");
+        jLabel171.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel171.setText("-COMBO MEALS");
+        jPanel10.add(jLabel171, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 170, -1));
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(272, 272, 272)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(327, Short.MAX_VALUE))
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(162, 162, 162)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(337, Short.MAX_VALUE))
-        );
+        jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM5.png"))); // NOI18N
+        jLabel172.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel10.add(jLabel172, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, -1, 90));
+
+        jLabel173.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel173.setText("WHITE CHOCOLATE CREAM");
+        jPanel10.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 180, 30));
+
+        jButton39.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton39.setText("CM 4");
+        jButton39.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 550, 60, 20));
+
+        jLabel174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM.png"))); // NOI18N
+        jLabel174.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel10.add(jLabel174, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 90));
+
+        jLabel175.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM1.png"))); // NOI18N
+        jLabel175.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel10.add(jLabel175, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, 90));
+
+        jLabel176.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM2.png"))); // NOI18N
+        jLabel176.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel10.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, -1, 90));
+
+        jLabel177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM3.png"))); // NOI18N
+        jLabel177.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel10.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, -1, 90));
+
+        jLabel178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM4.png"))); // NOI18N
+        jLabel178.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel10.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, -1, 90));
+
+        jLabel180.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel180.setText("WITH JAVA CHIP FRAPPUCCINO");
+        jPanel10.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 200, 30));
+
+        jLabel181.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        jLabel181.setText("ICED SHAKEN ESPRESSO");
+        jPanel10.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 50, 180, 30));
+
+        jLabel182.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel182.setText("ICED VANILLA LATTE");
+        jPanel10.add(jLabel182, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 130, 30));
+
+        jButton40.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton40.setText("CM 6");
+        jButton40.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 60, 20));
+
+        jLabel183.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel183.setText("-CHOCOLATE CHIP COOKIE WITH");
+        jPanel10.add(jLabel183, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 200, 20));
+
+        jLabel184.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel184.setText("-CHOCOLATE CHIP COOKIE WITH");
+        jPanel10.add(jLabel184, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 200, 20));
+
+        jLabel185.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel185.setText("CARAMEL MACCHIATO");
+        jPanel10.add(jLabel185, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 490, 160, 30));
+
+        jButton41.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton41.setText("CM 2");
+        jButton41.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 60, 20));
+
+        jLabel186.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel186.setText("-BAKED MANGO CROISSANT WITH");
+        jPanel10.add(jLabel186, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 220, 20));
+
+        jLabel187.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel187.setText("-CHOCOLATE CROISSANT WITH");
+        jPanel10.add(jLabel187, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 220, 20));
+
+        jButton42.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton42.setText("CM 3");
+        jButton42.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 60, 20));
+
+        jLabel188.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        jLabel188.setText("-CHRISTMAS TREE COOKIEE WITH ");
+        jPanel10.add(jLabel188, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, -1, 20));
+
+        jLabel189.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        jLabel189.setText("CHOCOLATE COOKIE CRUMBLE");
+        jPanel10.add(jLabel189, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 190, 30));
+
+        jButton43.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton43.setText("CM 1");
+        jButton43.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 60, 20));
+
+        jLabel190.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        jLabel190.setText("-BLUEBERRY CUPCAKE WITH");
+        jPanel10.add(jLabel190, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 180, 20));
+
+        jLabel191.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        jLabel191.setText("-RED VELVET CUPCAKE WITH");
+        jPanel10.add(jLabel191, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 180, 20));
+
+        jButton44.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        jButton44.setText("CM 5");
+        jButton44.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 60, 20));
+
+        jLabel214.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel214.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel214.setText("₱ 355.00");
+        jPanel10.add(jLabel214, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 90, 30));
+
+        jLabel215.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel215.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel215.setText("₱ 355.00");
+        jPanel10.add(jLabel215, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 80, 30));
+
+        jLabel216.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel216.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel216.setText("₱ 355.00");
+        jPanel10.add(jLabel216, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 370, 80, 30));
+
+        jLabel217.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel217.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel217.setText("₱ 355.00");
+        jPanel10.add(jLabel217, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, 90, 30));
+
+        jLabel218.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel218.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel218.setText("₱ 355.00");
+        jPanel10.add(jLabel218, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, 90, 30));
+
+        jLabel219.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel219.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel219.setText("₱ 355.00");
+        jPanel10.add(jLabel219, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 90, 30));
 
         jTabbedPane2.addTab("CM", jPanel10);
 
         jPanel3.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, -1, 700));
+
+        jLabel220.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
+        jLabel220.setText("Customer's Name:");
+        jPanel3.add(jLabel220, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel221.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        jLabel221.setForeground(new java.awt.Color(223, 216, 205));
+        jLabel221.setText("CHANGE:");
+        jPanel3.add(jLabel221, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 700, 150, 30));
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 700, 130, 30));
+
+        jButton45.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jButton45.setText("PAY");
+        jButton45.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.gray, java.awt.Color.lightGray));
+        jPanel3.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 740, 170, -1));
+
+        jLabel222.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        jLabel222.setForeground(new java.awt.Color(223, 216, 205));
+        jLabel222.setText("TOTAL: ");
+        jPanel3.add(jLabel222, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 620, 120, 30));
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 620, 130, 30));
+
+        jLabel223.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        jLabel223.setForeground(new java.awt.Color(223, 216, 205));
+        jLabel223.setText("AMOUNT: ");
+        jPanel3.add(jLabel223, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 660, 150, 30));
+
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 660, 130, 30));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1330, -1));
 
@@ -1605,6 +2006,42 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton38ActionPerformed
 
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1679,7 +2116,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton40;
+    private javax.swing.JButton jButton41;
+    private javax.swing.JButton jButton42;
+    private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
+    private javax.swing.JButton jButton45;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -1765,12 +2209,65 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel169;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel170;
+    private javax.swing.JLabel jLabel171;
+    private javax.swing.JLabel jLabel172;
+    private javax.swing.JLabel jLabel173;
+    private javax.swing.JLabel jLabel174;
+    private javax.swing.JLabel jLabel175;
+    private javax.swing.JLabel jLabel176;
+    private javax.swing.JLabel jLabel177;
+    private javax.swing.JLabel jLabel178;
+    private javax.swing.JLabel jLabel179;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel180;
+    private javax.swing.JLabel jLabel181;
+    private javax.swing.JLabel jLabel182;
+    private javax.swing.JLabel jLabel183;
+    private javax.swing.JLabel jLabel184;
+    private javax.swing.JLabel jLabel185;
+    private javax.swing.JLabel jLabel186;
+    private javax.swing.JLabel jLabel187;
+    private javax.swing.JLabel jLabel188;
+    private javax.swing.JLabel jLabel189;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel190;
+    private javax.swing.JLabel jLabel191;
+    private javax.swing.JLabel jLabel192;
+    private javax.swing.JLabel jLabel193;
+    private javax.swing.JLabel jLabel194;
+    private javax.swing.JLabel jLabel195;
+    private javax.swing.JLabel jLabel196;
+    private javax.swing.JLabel jLabel197;
+    private javax.swing.JLabel jLabel198;
+    private javax.swing.JLabel jLabel199;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel200;
+    private javax.swing.JLabel jLabel201;
+    private javax.swing.JLabel jLabel202;
+    private javax.swing.JLabel jLabel203;
+    private javax.swing.JLabel jLabel204;
+    private javax.swing.JLabel jLabel205;
+    private javax.swing.JLabel jLabel206;
+    private javax.swing.JLabel jLabel207;
+    private javax.swing.JLabel jLabel208;
+    private javax.swing.JLabel jLabel209;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel210;
+    private javax.swing.JLabel jLabel211;
+    private javax.swing.JLabel jLabel212;
+    private javax.swing.JLabel jLabel213;
+    private javax.swing.JLabel jLabel214;
+    private javax.swing.JLabel jLabel215;
+    private javax.swing.JLabel jLabel216;
+    private javax.swing.JLabel jLabel217;
+    private javax.swing.JLabel jLabel218;
+    private javax.swing.JLabel jLabel219;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel220;
+    private javax.swing.JLabel jLabel221;
+    private javax.swing.JLabel jLabel222;
+    private javax.swing.JLabel jLabel223;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -1778,6 +2275,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -1788,6 +2286,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -1798,6 +2297,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -1808,6 +2308,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
@@ -1865,5 +2366,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }
