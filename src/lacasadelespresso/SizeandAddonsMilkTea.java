@@ -124,6 +124,11 @@ public class SizeandAddonsMilkTea extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         jButton5.setText("ADD TO LIST");
         jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.gray));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 323, 90, 40));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
@@ -154,6 +159,14 @@ public class SizeandAddonsMilkTea extends javax.swing.JFrame {
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        Menu mn = new Menu();
+        mn.show();
+        
+        dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

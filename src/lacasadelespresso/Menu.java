@@ -4,11 +4,20 @@
  */
 package lacasadelespresso;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+
 /**
  *
  * @author zai
  */
 public class Menu extends javax.swing.JFrame {
+
+    private double totalAmount = 0.0;
 
     /**
      * Creates new form Menu
@@ -27,11 +36,6 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel7 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -48,14 +52,18 @@ public class Menu extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel221 = new javax.swing.JLabel();
+        DineIn = new javax.swing.JRadioButton();
+        TakeOut = new javax.swing.JRadioButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        HoneyAlmond = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        EspressoMacchiato = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
@@ -63,12 +71,12 @@ public class Menu extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        cappuccino = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        flatWhite = new javax.swing.JButton();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -76,8 +84,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        caffe_americano = new javax.swing.JButton();
+        CaffeLatte = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -92,8 +100,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel48 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        VanillaLatte = new javax.swing.JButton();
+        CaramelMacchiato = new javax.swing.JButton();
         jLabel149 = new javax.swing.JLabel();
         jLabel169 = new javax.swing.JLabel();
         jLabel170 = new javax.swing.JLabel();
@@ -131,7 +139,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel70 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
+        IcedAmericano = new javax.swing.JButton();
         jLabel72 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
@@ -158,22 +166,22 @@ public class Menu extends javax.swing.JFrame {
         jLabel85 = new javax.swing.JLabel();
         jLabel86 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
-        jButton16 = new javax.swing.JButton();
+        mocha = new javax.swing.JButton();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        jButton17 = new javax.swing.JButton();
+        CaramelCreame = new javax.swing.JButton();
         jLabel91 = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
-        jButton18 = new javax.swing.JButton();
+        CaffeVanilla = new javax.swing.JButton();
         jLabel95 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
+        JavaChip = new javax.swing.JButton();
         jLabel100 = new javax.swing.JLabel();
         jLabel101 = new javax.swing.JLabel();
         jLabel102 = new javax.swing.JLabel();
@@ -184,18 +192,18 @@ public class Menu extends javax.swing.JFrame {
         jLabel106 = new javax.swing.JLabel();
         jLabel107 = new javax.swing.JLabel();
         jLabel108 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
+        StrawberryCreame = new javax.swing.JButton();
         jLabel109 = new javax.swing.JLabel();
         jLabel110 = new javax.swing.JLabel();
         jLabel111 = new javax.swing.JLabel();
         jLabel112 = new javax.swing.JLabel();
         jLabel113 = new javax.swing.JLabel();
-        jButton22 = new javax.swing.JButton();
+        ChocoCookieeCrumble = new javax.swing.JButton();
         jLabel114 = new javax.swing.JLabel();
         jLabel115 = new javax.swing.JLabel();
         jLabel116 = new javax.swing.JLabel();
         jLabel117 = new javax.swing.JLabel();
-        jButton23 = new javax.swing.JButton();
+        WhiteChocoCream = new javax.swing.JButton();
         jLabel118 = new javax.swing.JLabel();
         jLabel119 = new javax.swing.JLabel();
         jLabel120 = new javax.swing.JLabel();
@@ -211,23 +219,23 @@ public class Menu extends javax.swing.JFrame {
         jLabel121 = new javax.swing.JLabel();
         jLabel122 = new javax.swing.JLabel();
         jLabel123 = new javax.swing.JLabel();
-        jButton24 = new javax.swing.JButton();
+        CrispandCreame = new javax.swing.JButton();
         jLabel125 = new javax.swing.JLabel();
-        jButton25 = new javax.swing.JButton();
+        DarkChoco = new javax.swing.JButton();
         jLabel126 = new javax.swing.JLabel();
         jLabel127 = new javax.swing.JLabel();
         jLabel128 = new javax.swing.JLabel();
         jLabel129 = new javax.swing.JLabel();
         jLabel130 = new javax.swing.JLabel();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
+        BrownSugar = new javax.swing.JButton();
+        LuxeCreamDelight = new javax.swing.JButton();
         jLabel131 = new javax.swing.JLabel();
         jLabel132 = new javax.swing.JLabel();
         jLabel133 = new javax.swing.JLabel();
         jLabel134 = new javax.swing.JLabel();
         jLabel135 = new javax.swing.JLabel();
         jLabel136 = new javax.swing.JLabel();
-        jButton28 = new javax.swing.JButton();
+        SuenoDeMatcha = new javax.swing.JButton();
         jLabel137 = new javax.swing.JLabel();
         jLabel138 = new javax.swing.JLabel();
         jLabel139 = new javax.swing.JLabel();
@@ -245,42 +253,42 @@ public class Menu extends javax.swing.JFrame {
         jLabel124 = new javax.swing.JLabel();
         jLabel145 = new javax.swing.JLabel();
         jLabel146 = new javax.swing.JLabel();
-        jButton29 = new javax.swing.JButton();
+        xmastreecookiee = new javax.swing.JButton();
         jLabel148 = new javax.swing.JLabel();
         jLabel150 = new javax.swing.JLabel();
         jLabel151 = new javax.swing.JLabel();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
+        blueberry = new javax.swing.JButton();
+        santaCookiee = new javax.swing.JButton();
+        chocolatebrownies = new javax.swing.JButton();
         jLabel147 = new javax.swing.JLabel();
         jLabel152 = new javax.swing.JLabel();
         jLabel153 = new javax.swing.JLabel();
         jLabel154 = new javax.swing.JLabel();
         jLabel155 = new javax.swing.JLabel();
-        jButton33 = new javax.swing.JButton();
+        chocolateChip = new javax.swing.JButton();
         jLabel156 = new javax.swing.JLabel();
         jLabel157 = new javax.swing.JLabel();
         jLabel158 = new javax.swing.JLabel();
         jLabel159 = new javax.swing.JLabel();
         jLabel160 = new javax.swing.JLabel();
-        jButton34 = new javax.swing.JButton();
-        jButton35 = new javax.swing.JButton();
+        EggPesto = new javax.swing.JButton();
+        mangocroissant = new javax.swing.JButton();
         jLabel161 = new javax.swing.JLabel();
         jLabel162 = new javax.swing.JLabel();
         jLabel163 = new javax.swing.JLabel();
-        jButton36 = new javax.swing.JButton();
-        jButton37 = new javax.swing.JButton();
+        buttercroissnat = new javax.swing.JButton();
+        cholatecroissant = new javax.swing.JButton();
         jLabel164 = new javax.swing.JLabel();
         jLabel165 = new javax.swing.JLabel();
         jLabel166 = new javax.swing.JLabel();
         jLabel167 = new javax.swing.JLabel();
         jLabel168 = new javax.swing.JLabel();
-        jButton38 = new javax.swing.JButton();
+        redvelvet = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jLabel171 = new javax.swing.JLabel();
         jLabel172 = new javax.swing.JLabel();
         jLabel173 = new javax.swing.JLabel();
-        jButton39 = new javax.swing.JButton();
+        cm4 = new javax.swing.JButton();
         jLabel174 = new javax.swing.JLabel();
         jLabel175 = new javax.swing.JLabel();
         jLabel176 = new javax.swing.JLabel();
@@ -289,20 +297,20 @@ public class Menu extends javax.swing.JFrame {
         jLabel180 = new javax.swing.JLabel();
         jLabel181 = new javax.swing.JLabel();
         jLabel182 = new javax.swing.JLabel();
-        jButton40 = new javax.swing.JButton();
+        cm6 = new javax.swing.JButton();
         jLabel183 = new javax.swing.JLabel();
         jLabel184 = new javax.swing.JLabel();
         jLabel185 = new javax.swing.JLabel();
-        jButton41 = new javax.swing.JButton();
+        cm2 = new javax.swing.JButton();
         jLabel186 = new javax.swing.JLabel();
         jLabel187 = new javax.swing.JLabel();
-        jButton42 = new javax.swing.JButton();
+        c3 = new javax.swing.JButton();
         jLabel188 = new javax.swing.JLabel();
         jLabel189 = new javax.swing.JLabel();
-        jButton43 = new javax.swing.JButton();
+        cm1 = new javax.swing.JButton();
         jLabel190 = new javax.swing.JLabel();
         jLabel191 = new javax.swing.JLabel();
-        jButton44 = new javax.swing.JButton();
+        cm5 = new javax.swing.JButton();
         jLabel214 = new javax.swing.JLabel();
         jLabel215 = new javax.swing.JLabel();
         jLabel216 = new javax.swing.JLabel();
@@ -310,16 +318,19 @@ public class Menu extends javax.swing.JFrame {
         jLabel218 = new javax.swing.JLabel();
         jLabel219 = new javax.swing.JLabel();
         jLabel220 = new javax.swing.JLabel();
-        jLabel221 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
         jButton45 = new javax.swing.JButton();
         jLabel222 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtTotal = new javax.swing.JTextField();
         jLabel223 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtAmount = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jLabel224 = new javax.swing.JLabel();
         jButton46 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        receipt = new javax.swing.JTextArea();
+        NewOrder = new javax.swing.JButton();
+        back = new javax.swing.JButton();
+        remove_item2 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -334,53 +345,6 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel2.setBackground(new java.awt.Color(223, 216, 205));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true), "Reciept", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Mongolian Baiti", 1, 24))); // NOI18N
-        jPanel2.setAlignmentX(0.7F);
-
-        jTable1.setBackground(new java.awt.Color(223, 216, 205));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "PRODUCT ID", "NAME", "QUANTITY", "PRICE"
-            }
-        ));
-        jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-        jTable1.setShowGrid(false);
-        jScrollPane1.setViewportView(jTable1);
-
-        jLabel8.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
-        jLabel8.setText("Customer's Name:");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(51, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 150, 340, 460));
 
         jPanel3.setBackground(new java.awt.Color(77, 0, 0));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -499,6 +463,31 @@ public class Menu extends javax.swing.JFrame {
         jTabbedPane2.setTabPlacement(javax.swing.JTabbedPane.BOTTOM);
         jTabbedPane2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
 
+        jPanel2.setBackground(new java.awt.Color(223, 216, 205));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel221.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
+        jLabel221.setText("-DINING LOCATION");
+        jPanel2.add(jLabel221, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 230, -1));
+
+        DineIn.setText("DINE IN");
+        DineIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DineInActionPerformed(evt);
+            }
+        });
+        jPanel2.add(DineIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+
+        TakeOut.setText("TAKE OUT");
+        TakeOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TakeOutActionPerformed(evt);
+            }
+        });
+        jPanel2.add(TakeOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, -1, -1));
+
+        jTabbedPane2.addTab("PREFERENCE", jPanel2);
+
         jPanel4.setBackground(new java.awt.Color(223, 216, 205));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -518,19 +507,29 @@ public class Menu extends javax.swing.JFrame {
         jLabel17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, 90));
 
-        jButton1.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
-        jButton1.setText("HONEY ALMOND MILK");
-        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, 140, -1));
+        HoneyAlmond.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
+        HoneyAlmond.setText("HONEY ALMOND MILK");
+        HoneyAlmond.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        HoneyAlmond.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HoneyAlmondActionPerformed(evt);
+            }
+        });
+        jPanel4.add(HoneyAlmond, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, 140, -1));
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel18.setText("and a velvety milk foam topping.");
         jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 160, 20));
 
-        jButton2.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton2.setText("ESPRESSO MACCHIATO");
-        jButton2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 560, 160, 20));
+        EspressoMacchiato.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        EspressoMacchiato.setText("ESPRESSO MACCHIATO");
+        EspressoMacchiato.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        EspressoMacchiato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EspressoMacchiatoActionPerformed(evt);
+            }
+        });
+        jPanel4.add(EspressoMacchiato, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 560, 160, 20));
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel19.setText("120 Calories");
@@ -560,10 +559,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel4.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, 90));
 
-        jButton3.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
-        jButton3.setText("CAPPUCCINO");
-        jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 130, -1));
+        cappuccino.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
+        cappuccino.setText("CAPPUCCINO");
+        cappuccino.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cappuccino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cappuccinoActionPerformed(evt);
+            }
+        });
+        jPanel4.add(cappuccino, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 130, -1));
 
         jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel26.setText("140 Calories");
@@ -581,10 +585,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel4.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, 90));
 
-        jButton4.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
-        jButton4.setText("FLAT WHITE");
-        jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 130, -1));
+        flatWhite.setFont(new java.awt.Font("Microsoft YaHei Light", 1, 12)); // NOI18N
+        flatWhite.setText("FLAT WHITE");
+        flatWhite.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        flatWhite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flatWhiteActionPerformed(evt);
+            }
+        });
+        jPanel4.add(flatWhite, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 130, -1));
 
         jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel30.setText("170 Calories");
@@ -614,15 +623,25 @@ public class Menu extends javax.swing.JFrame {
         jLabel36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel4.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, -1, 90));
 
-        jButton5.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton5.setText("CAFFE AMERICANO");
-        jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 150, -1));
+        caffe_americano.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        caffe_americano.setText("CAFFE AMERICANO");
+        caffe_americano.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        caffe_americano.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caffe_americanoActionPerformed(evt);
+            }
+        });
+        jPanel4.add(caffe_americano, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 150, -1));
 
-        jButton6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton6.setText("CAFFE LATTE");
-        jButton6.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 130, -1));
+        CaffeLatte.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        CaffeLatte.setText("CAFFE LATTE");
+        CaffeLatte.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        CaffeLatte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaffeLatteActionPerformed(evt);
+            }
+        });
+        jPanel4.add(CaffeLatte, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 130, -1));
 
         jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel37.setText("15 Calories");
@@ -680,15 +699,25 @@ public class Menu extends javax.swing.JFrame {
         jLabel50.setText("-A deliciously sweet and creamy coffee drink");
         jPanel4.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 210, 20));
 
-        jButton7.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton7.setText("VANILLA LATTE");
-        jButton7.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 130, -1));
+        VanillaLatte.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        VanillaLatte.setText("VANILLA LATTE");
+        VanillaLatte.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        VanillaLatte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VanillaLatteActionPerformed(evt);
+            }
+        });
+        jPanel4.add(VanillaLatte, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 130, -1));
 
-        jButton8.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton8.setText("CARAMEL MACCHIATO");
-        jButton8.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jPanel4.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 430, 150, -1));
+        CaramelMacchiato.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        CaramelMacchiato.setText("CARAMEL MACCHIATO");
+        CaramelMacchiato.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        CaramelMacchiato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaramelMacchiatoActionPerformed(evt);
+            }
+        });
+        jPanel4.add(CaramelMacchiato, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 430, 150, -1));
 
         jLabel149.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel149.setText("rich caramel flavor.");
@@ -871,15 +900,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel71.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel5.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
 
-        jButton13.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton13.setText("ICED CAFFE AMERICANO");
-        jButton13.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        IcedAmericano.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        IcedAmericano.setText("ICED CAFFE AMERICANO");
+        IcedAmericano.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        IcedAmericano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                IcedAmericanoActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, -1));
+        jPanel5.add(IcedAmericano, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, -1));
 
         jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel72.setText("15 Calories");
@@ -1005,15 +1034,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel87.setText("a sprinkle of cookie bits.");
         jPanel6.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 210, 20));
 
-        jButton16.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton16.setText("MOCHA");
-        jButton16.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        mocha.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        mocha.setText("MOCHA");
+        mocha.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        mocha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                mochaActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 120, -1));
+        jPanel6.add(mocha, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 120, -1));
 
         jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel88.setText("and milk, topped with whipped cream.");
@@ -1027,15 +1056,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel90.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel6.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, -1, 90));
 
-        jButton17.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton17.setText("CARAMEL CREME FRAPPUCCINO");
-        jButton17.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        CaramelCreame.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        CaramelCreame.setText("CARAMEL CREAME FRAPPUCCINO");
+        CaramelCreame.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        CaramelCreame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                CaramelCreameActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 530, 200, -1));
+        jPanel6.add(CaramelCreame, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 530, 210, -1));
 
         jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel91.setText("480 Calories");
@@ -1053,15 +1082,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel94.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel6.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, 90));
 
-        jButton18.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton18.setText("CAFFE VANILLA ");
-        jButton18.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        CaffeVanilla.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        CaffeVanilla.setText("CAFFE VANILLA ");
+        CaffeVanilla.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        CaffeVanilla.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                CaffeVanillaActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 140, -1));
+        jPanel6.add(CaffeVanilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 140, -1));
 
         jLabel95.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel95.setText("420 Calories");
@@ -1083,15 +1112,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel99.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel6.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 90));
 
-        jButton19.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton19.setText("JAVA CHIP");
-        jButton19.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        JavaChip.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        JavaChip.setText("JAVA CHIP");
+        JavaChip.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        JavaChip.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                JavaChipActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 120, -1));
+        jPanel6.add(JavaChip, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 120, -1));
 
         jLabel100.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel100.setText("440 Calories");
@@ -1139,15 +1168,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel108.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel6.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, -1, 90));
 
-        jButton21.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton21.setText("STRAWBERRY CREME");
-        jButton21.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        StrawberryCreame.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        StrawberryCreame.setText("STRAWBERRY CREAME");
+        StrawberryCreame.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        StrawberryCreame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                StrawberryCreameActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 170, -1));
+        jPanel6.add(StrawberryCreame, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 170, -1));
 
         jLabel109.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel109.setText("370 Calories");
@@ -1169,15 +1198,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel113.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel6.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, -1, 90));
 
-        jButton22.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton22.setText("CHOCOLATE COOKIEE CRUMBLE");
-        jButton22.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        ChocoCookieeCrumble.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        ChocoCookieeCrumble.setText("CHOCOLATE COOKIEE CRUMBLE");
+        ChocoCookieeCrumble.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        ChocoCookieeCrumble.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                ChocoCookieeCrumbleActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 210, -1));
+        jPanel6.add(ChocoCookieeCrumble, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 210, -1));
 
         jLabel114.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel114.setText("460 Calories");
@@ -1195,15 +1224,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel117.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel6.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, -1, 90));
 
-        jButton23.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton23.setText("WHITE CHOCOLATE CREME");
-        jButton23.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        WhiteChocoCream.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        WhiteChocoCream.setText("WHITE CHOCOLATE CREAME");
+        WhiteChocoCream.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        WhiteChocoCream.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                WhiteChocoCreamActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 180, -1));
+        jPanel6.add(WhiteChocoCream, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 180, -1));
 
         jLabel118.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel118.setText("350 Calories");
@@ -1274,29 +1303,29 @@ public class Menu extends javax.swing.JFrame {
         jLabel123.setText("350 Calories");
         jPanel8.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, 70, 20));
 
-        jButton24.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton24.setText("CRISP AND CREME DELIGHT");
-        jButton24.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        CrispandCreame.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        CrispandCreame.setText("CRISP AND CREAME DELIGHT");
+        CrispandCreame.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        CrispandCreame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                CrispandCreameActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 170, -1));
+        jPanel8.add(CrispandCreame, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, 190, -1));
 
         jLabel125.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/M.png"))); // NOI18N
         jLabel125.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel8.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 90));
 
-        jButton25.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton25.setText("DARK CHOCO TRIO");
-        jButton25.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        DarkChoco.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        DarkChoco.setText("DARK CHOCO TRIO");
+        DarkChoco.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        DarkChoco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                DarkChocoActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, -1));
+        jPanel8.add(DarkChoco, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, -1));
 
         jLabel126.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel126.setText("170 Calories");
@@ -1318,25 +1347,25 @@ public class Menu extends javax.swing.JFrame {
         jLabel130.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel8.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, -1, 90));
 
-        jButton26.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton26.setText("BROWN SUGAR VELVET");
-        jButton26.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        BrownSugar.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        BrownSugar.setText("BROWN SUGAR VELVET");
+        BrownSugar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        BrownSugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                BrownSugarActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 170, -1));
+        jPanel8.add(BrownSugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 170, -1));
 
-        jButton27.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton27.setText("LUXE CREME DELIGHT");
-        jButton27.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        LuxeCreamDelight.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        LuxeCreamDelight.setText("LUXE CREAME DELIGHT");
+        LuxeCreamDelight.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        LuxeCreamDelight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                LuxeCreamDelightActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 170, -1));
+        jPanel8.add(LuxeCreamDelight, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 170, -1));
 
         jLabel131.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel131.setText("370 Calories");
@@ -1362,15 +1391,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel136.setText("-A rich and creamy milk tea infused with the decadent ");
         jPanel8.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 260, 20));
 
-        jButton28.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton28.setText("SUENO DE MATCHA");
-        jButton28.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        SuenoDeMatcha.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        SuenoDeMatcha.setText("SUENO DE MATCHA");
+        SuenoDeMatcha.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        SuenoDeMatcha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                SuenoDeMatchaActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 170, -1));
+        jPanel8.add(SuenoDeMatcha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 170, -1));
 
         jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel137.setText("-A rich dark chocolate milk tea sweetened ");
@@ -1446,15 +1475,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel146.setText("170 Calories");
         jPanel9.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 510, 70, 20));
 
-        jButton29.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton29.setText("CHRISTMAS TREE COOKIEE");
-        jButton29.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        xmastreecookiee.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        xmastreecookiee.setText("CHRISTMAS TREE COOKIEE");
+        xmastreecookiee.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        xmastreecookiee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                xmastreecookieeActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 170, 20));
+        jPanel9.add(xmastreecookiee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 170, 20));
 
         jLabel148.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
         jLabel148.setText("-BREAKFAST SANDWICHES");
@@ -1468,35 +1497,35 @@ public class Menu extends javax.swing.JFrame {
         jLabel151.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel9.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, 90));
 
-        jButton30.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton30.setText("BLUEBERRY CUPCAKE");
-        jButton30.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton30.addActionListener(new java.awt.event.ActionListener() {
+        blueberry.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        blueberry.setText("BLUEBERRY CUPCAKE");
+        blueberry.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        blueberry.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton30ActionPerformed(evt);
+                blueberryActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 160, 20));
+        jPanel9.add(blueberry, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 160, 20));
 
-        jButton31.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton31.setText("SANTA'S COOKIEE");
-        jButton31.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton31.addActionListener(new java.awt.event.ActionListener() {
+        santaCookiee.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        santaCookiee.setText("SANTA'S COOKIEE");
+        santaCookiee.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        santaCookiee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton31ActionPerformed(evt);
+                santaCookieeActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 160, 20));
+        jPanel9.add(santaCookiee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 160, 20));
 
-        jButton32.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton32.setText("DOUBLE CHOCOLATE BROWNIES");
-        jButton32.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton32.addActionListener(new java.awt.event.ActionListener() {
+        chocolatebrownies.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        chocolatebrownies.setText("DOUBLE CHOCOLATE BROWNIES");
+        chocolatebrownies.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        chocolatebrownies.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton32ActionPerformed(evt);
+                chocolatebrowniesActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 220, 20));
+        jPanel9.add(chocolatebrownies, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 220, 20));
 
         jLabel147.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel147.setText("170 Calories");
@@ -1518,15 +1547,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel155.setText("170 Calories");
         jPanel9.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 70, 20));
 
-        jButton33.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton33.setText("CHOCOLATE CHIP COOKIEE");
-        jButton33.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton33.addActionListener(new java.awt.event.ActionListener() {
+        chocolateChip.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        chocolateChip.setText("CHOCOLATE CHIP COOKIEE");
+        chocolateChip.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        chocolateChip.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton33ActionPerformed(evt);
+                chocolateChipActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 530, 180, 20));
+        jPanel9.add(chocolateChip, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 530, 180, 20));
 
         jLabel156.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
         jLabel156.setText("-BAKERY");
@@ -1548,25 +1577,25 @@ public class Menu extends javax.swing.JFrame {
         jLabel160.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel9.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 40, -1, 90));
 
-        jButton34.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton34.setText("EGG, PESTO AND MOZZARELLLA ");
-        jButton34.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton34.addActionListener(new java.awt.event.ActionListener() {
+        EggPesto.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        EggPesto.setText("EGG, PESTO AND MOZZARELLLA ");
+        EggPesto.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        EggPesto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton34ActionPerformed(evt);
+                EggPestoActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 210, 20));
+        jPanel9.add(EggPesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 210, 20));
 
-        jButton35.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton35.setText("BAKED MANGO CROISSANT");
-        jButton35.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton35.addActionListener(new java.awt.event.ActionListener() {
+        mangocroissant.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        mangocroissant.setText("BAKED MANGO CROISSANT");
+        mangocroissant.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        mangocroissant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton35ActionPerformed(evt);
+                mangocroissantActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 80, 180, 20));
+        jPanel9.add(mangocroissant, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 80, 180, 20));
 
         jLabel161.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/P6.png"))); // NOI18N
         jLabel161.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -1580,25 +1609,25 @@ public class Menu extends javax.swing.JFrame {
         jLabel163.setText("170 Calories");
         jPanel9.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 160, 70, 20));
 
-        jButton36.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton36.setText("BUTTER CROISSANT");
-        jButton36.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton36.addActionListener(new java.awt.event.ActionListener() {
+        buttercroissnat.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        buttercroissnat.setText("BUTTER CROISSANT");
+        buttercroissnat.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        buttercroissnat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton36ActionPerformed(evt);
+                buttercroissnatActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 160, 20));
+        jPanel9.add(buttercroissnat, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 160, 20));
 
-        jButton37.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton37.setText("CHOCOLATE CROISSANT");
-        jButton37.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton37.addActionListener(new java.awt.event.ActionListener() {
+        cholatecroissant.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        cholatecroissant.setText("CHOCOLATE CROISSANT");
+        cholatecroissant.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cholatecroissant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton37ActionPerformed(evt);
+                cholatecroissantActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 160, 20));
+        jPanel9.add(cholatecroissant, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 160, 20));
 
         jLabel164.setFont(new java.awt.Font("Lucida Handwriting", 1, 18)); // NOI18N
         jLabel164.setText("-CROISSANTS");
@@ -1620,15 +1649,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel168.setText("170 Calories");
         jPanel9.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, 70, 20));
 
-        jButton38.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton38.setText("RED VELVET CUPCAKE");
-        jButton38.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton38.addActionListener(new java.awt.event.ActionListener() {
+        redvelvet.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        redvelvet.setText("RED VELVET CUPCAKE");
+        redvelvet.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        redvelvet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton38ActionPerformed(evt);
+                redvelvetActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 160, 20));
+        jPanel9.add(redvelvet, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 160, 20));
 
         jTabbedPane2.addTab("P", jPanel9);
 
@@ -1647,15 +1676,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel173.setText("WHITE CHOCOLATE CREAM");
         jPanel10.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 180, 30));
 
-        jButton39.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton39.setText("CM 4");
-        jButton39.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton39.addActionListener(new java.awt.event.ActionListener() {
+        cm4.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        cm4.setText("CM 4");
+        cm4.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cm4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton39ActionPerformed(evt);
+                cm4ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 550, 60, 20));
+        jPanel10.add(cm4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 550, 60, 20));
 
         jLabel174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CM.png"))); // NOI18N
         jLabel174.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -1689,15 +1718,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel182.setText("ICED VANILLA LATTE");
         jPanel10.add(jLabel182, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 130, 30));
 
-        jButton40.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton40.setText("CM 6");
-        jButton40.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton40.addActionListener(new java.awt.event.ActionListener() {
+        cm6.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        cm6.setText("CM 6");
+        cm6.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cm6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton40ActionPerformed(evt);
+                cm6ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 60, 20));
+        jPanel10.add(cm6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 60, 20));
 
         jLabel183.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel183.setText("-CHOCOLATE CHIP COOKIE WITH");
@@ -1711,15 +1740,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel185.setText("CARAMEL MACCHIATO");
         jPanel10.add(jLabel185, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 490, 160, 30));
 
-        jButton41.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton41.setText("CM 2");
-        jButton41.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton41.addActionListener(new java.awt.event.ActionListener() {
+        cm2.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        cm2.setText("CM 2");
+        cm2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cm2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton41ActionPerformed(evt);
+                cm2ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 60, 20));
+        jPanel10.add(cm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 60, 20));
 
         jLabel186.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel186.setText("-BAKED MANGO CROISSANT WITH");
@@ -1729,15 +1758,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel187.setText("-CHOCOLATE CROISSANT WITH");
         jPanel10.add(jLabel187, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 220, 20));
 
-        jButton42.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton42.setText("CM 3");
-        jButton42.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton42.addActionListener(new java.awt.event.ActionListener() {
+        c3.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        c3.setText("CM 3");
+        c3.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton42ActionPerformed(evt);
+                c3ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 60, 20));
+        jPanel10.add(c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 60, 20));
 
         jLabel188.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel188.setText("-CHRISTMAS TREE COOKIEE WITH ");
@@ -1747,15 +1776,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel189.setText("CHOCOLATE COOKIE CRUMBLE");
         jPanel10.add(jLabel189, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 190, 30));
 
-        jButton43.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton43.setText("CM 1");
-        jButton43.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton43.addActionListener(new java.awt.event.ActionListener() {
+        cm1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        cm1.setText("CM 1");
+        cm1.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cm1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton43ActionPerformed(evt);
+                cm1ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 60, 20));
+        jPanel10.add(cm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 60, 20));
 
         jLabel190.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel190.setText("-BLUEBERRY CUPCAKE WITH");
@@ -1765,15 +1794,15 @@ public class Menu extends javax.swing.JFrame {
         jLabel191.setText("-RED VELVET CUPCAKE WITH");
         jPanel10.add(jLabel191, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 180, 20));
 
-        jButton44.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
-        jButton44.setText("CM 5");
-        jButton44.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
-        jButton44.addActionListener(new java.awt.event.ActionListener() {
+        cm5.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 12)); // NOI18N
+        cm5.setText("CM 5");
+        cm5.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.lightGray));
+        cm5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton44ActionPerformed(evt);
+                cm5ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 60, 20));
+        jPanel10.add(cm5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 60, 20));
 
         jLabel214.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel214.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1807,27 +1836,20 @@ public class Menu extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("CM", jPanel10);
 
-        jPanel3.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, -1, 700));
+        jPanel3.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, -1, 700));
 
         jLabel220.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
         jLabel220.setText("Customer's Name:");
         jPanel3.add(jLabel220, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel221.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        jLabel221.setForeground(new java.awt.Color(223, 216, 205));
-        jLabel221.setText("CHANGE:");
-        jPanel3.add(jLabel221, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 700, 150, 30));
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 700, 130, 30));
-
         jButton45.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
         jButton45.setText("PAY");
         jButton45.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.gray, java.awt.Color.lightGray));
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 740, 170, -1));
 
         jLabel222.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
@@ -1835,24 +1857,24 @@ public class Menu extends javax.swing.JFrame {
         jLabel222.setText("Search:");
         jPanel3.add(jLabel222, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 70, 70, 30));
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        txtTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                txtTotalActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 620, 130, 30));
+        jPanel3.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 620, 130, 30));
 
         jLabel223.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         jLabel223.setForeground(new java.awt.Color(223, 216, 205));
         jLabel223.setText("AMOUNT: ");
         jPanel3.add(jLabel223, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 660, 150, 30));
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        txtAmount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                txtAmountActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 660, 130, 30));
+        jPanel3.add(txtAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 660, 130, 30));
         jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 70, 160, -1));
 
         jLabel224.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
@@ -1870,6 +1892,56 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel3.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 20, 60, 40));
 
+        jScrollPane2.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jScrollPane2AncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+
+        receipt.setColumns(20);
+        receipt.setRows(5);
+        receipt.setBorder(javax.swing.BorderFactory.createTitledBorder("Receipt"));
+        receipt.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                receiptAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jScrollPane2.setViewportView(receipt);
+
+        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 140, 340, 460));
+
+        NewOrder.setText("New Order");
+        NewOrder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NewOrderActionPerformed(evt);
+            }
+        });
+        jPanel3.add(NewOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 700, 100, 30));
+
+        back.setText("BACK");
+        back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backActionPerformed(evt);
+            }
+        });
+        jPanel3.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 700, 70, 30));
+
+        remove_item2.setText("REMOVE ITEM");
+        remove_item2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                remove_item2ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(remove_item2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 700, 120, 30));
+
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1330, 790));
 
         pack();
@@ -1878,32 +1950,32 @@ public class Menu extends javax.swing.JFrame {
 
     private void ComboMealsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboMealsActionPerformed
         // TODO add your handling code here:
-        jTabbedPane2.setSelectedIndex(5);
+        jTabbedPane2.setSelectedIndex(6);
     }//GEN-LAST:event_ComboMealsActionPerformed
 
     private void IceCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IceCoffeeActionPerformed
         // TODO add your handling code here:
-        jTabbedPane2.setSelectedIndex(1);
+        jTabbedPane2.setSelectedIndex(2);
     }//GEN-LAST:event_IceCoffeeActionPerformed
 
     private void FrapuccinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrapuccinoActionPerformed
         // TODO add your handling code here:
-        jTabbedPane2.setSelectedIndex(2);
+        jTabbedPane2.setSelectedIndex(3);
     }//GEN-LAST:event_FrapuccinoActionPerformed
 
     private void MilkteaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MilkteaActionPerformed
         // TODO add your handling code here:
-        jTabbedPane2.setSelectedIndex(3);
+        jTabbedPane2.setSelectedIndex(4);
     }//GEN-LAST:event_MilkteaActionPerformed
 
     private void PastriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PastriesActionPerformed
         // TODO add your handling code here:
-        jTabbedPane2.setSelectedIndex(4);
+        jTabbedPane2.setSelectedIndex(5);
     }//GEN-LAST:event_PastriesActionPerformed
 
     private void HotCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HotCoffeeActionPerformed
         // TODO add your handling code here:
-        jTabbedPane2.setSelectedIndex(0);
+        jTabbedPane2.setSelectedIndex(1);
     }//GEN-LAST:event_HotCoffeeActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -1922,9 +1994,39 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    private void IcedAmericanoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IcedAmericanoActionPerformed
+         try {
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 60.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 90.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; // Exit if user cancels
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Iced Caffe Americano", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_IcedAmericanoActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
@@ -1934,133 +2036,797 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton15ActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    private void mochaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mochaActionPerformed
+         try {
+           
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0;
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 160.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Mocha", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_mochaActionPerformed
+
+    private void CaramelCreameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaramelCreameActionPerformed
+          try {
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 160.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
+   
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+       
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Chocolate Cookiee Crumble", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_CaramelCreameActionPerformed
+
+    private void CaffeVanillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaffeVanillaActionPerformed
+         try {
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 160.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
+  
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Caffe Vanilla", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_CaffeVanillaActionPerformed
+
+    private void JavaChipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JavaChipActionPerformed
+        try {
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 160.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
+   
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Java Chip", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_JavaChipActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton20ActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    private void StrawberryCreameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StrawberryCreameActionPerformed
+        try {
+           
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 1600.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Strawberry Creame", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_StrawberryCreameActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
+    private void ChocoCookieeCrumbleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChocoCookieeCrumbleActionPerformed
+         try {
+          
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27ActionPerformed
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 1600.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return;
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton28ActionPerformed
+          double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Chocolate Cookiee Crumble", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton29ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_ChocoCookieeCrumbleActionPerformed
 
-    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30ActionPerformed
+    private void WhiteChocoCreamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WhiteChocoCreamActionPerformed
+         try {
+          
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31ActionPerformed
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 1600.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 200.0; 
+        }
+  
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return;
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32ActionPerformed
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Chocolate Cookiee Crumble", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
 
-    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton33ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_WhiteChocoCreamActionPerformed
 
-    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton34ActionPerformed
+    private void CrispandCreameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrispandCreameActionPerformed
+         try {
+           
+        String[] sizes = {"Medio - 16oz", "Grande - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton35ActionPerformed
+        double pricePerCup = 0;
+        if (size.equals("Medio - 22oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Grande - 24oz")) {
+            pricePerCup = 130.0; 
+        }
+   
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton36ActionPerformed
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", // "₱" symbol for pesos
+            "Crisp and Cream Delight", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
 
-    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton37ActionPerformed
+        System.out.println("Price: " + totalPrice);
 
-    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton38ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_CrispandCreameActionPerformed
 
-    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton39ActionPerformed
+    private void DarkChocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DarkChocoActionPerformed
+          try {
+           
+        String[] sizes = {"Medio - 16oz", "Grande - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton40ActionPerformed
+         double pricePerCup = 0;
+        if (size.equals("Medio - 22oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Grande - 24oz")) {
+            pricePerCup = 130.0; 
+        }
+   
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; // Exit if user cancels
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton41ActionPerformed
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n",
+            "Dark Choco Trio", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
 
-    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton42ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_DarkChocoActionPerformed
 
-    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton43ActionPerformed
+    private void BrownSugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BrownSugarActionPerformed
+        try {
+           
+        String[] sizes = {"Medio - 16oz", "Grande - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
 
-    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton44ActionPerformed
+        double pricePerCup = 0;
+        if (size.equals("Medio - 22oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Grande - 24oz")) {
+            pricePerCup = 130.0; 
+        }
+   
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return;
+        int quantity = Integer.parseInt(quantityInput);
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Brown Sugar Velvet", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_BrownSugarActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void LuxeCreamDelightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LuxeCreamDelightActionPerformed
+         try {
+          
+        String[] sizes = {"Medio - 16oz", "Grande - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Medio - 22oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Grande - 24oz")) {
+            pricePerCup = 130.0; 
+        }
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Luxe Cream Delight", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_LuxeCreamDelightActionPerformed
+
+    private void SuenoDeMatchaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuenoDeMatchaActionPerformed
+        try {
+           
+        String[] sizes = {"Medio - 16oz", "Grande - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Medio - 22oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Grande - 24oz")) {
+            pricePerCup = 130.0; 
+        }
+   
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Sueno De Matcha", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_SuenoDeMatchaActionPerformed
+
+    private void xmastreecookieeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xmastreecookieeActionPerformed
+          try {
+       
+        double pricePerxmastree = 170.0; 
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerxmastree;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                      %-8d ₱%7.2f\n", 
+            "Christmas Tree Cookiee", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+
+        System.out.println("Christmas Tree Cookiee Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_xmastreecookieeActionPerformed
+
+    private void blueberryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blueberryActionPerformed
+         try {
+        double pricePerSBlueberry = 150.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerSBlueberry;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+
+        receipt.append(String.format(
+            "%-24s                      %-8d ₱%7.2f\n", 
+            "BlueBerry Cupcake", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+
+        System.out.println("BlueBerry Cupcake Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_blueberryActionPerformed
+
+    private void santaCookieeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_santaCookieeActionPerformed
+        try {
+        double pricePerSanCook = 170.0; 
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+    
+        double totalPrice = quantity * pricePerSanCook;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                      %-8d ₱%7.2f\n", 
+            "Santa's Cookiee", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Santa's Cookiee Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_santaCookieeActionPerformed
+
+    private void chocolatebrowniesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chocolatebrowniesActionPerformed
+         try {
+           double pricePerChocoBrown = 190.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput); 
+
+        double totalPrice = quantity * pricePerChocoBrown;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Double Chocolate Brownies", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+
+        System.out.println("Double Chocolate Brownies Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_chocolatebrowniesActionPerformed
+
+    private void chocolateChipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chocolateChipActionPerformed
+          try {
+        double pricePerChocoChip = 180.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerChocoChip;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Chocolate Chip Cookiee", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Chocolate Chip Cookiee Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_chocolateChipActionPerformed
+
+    private void EggPestoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EggPestoActionPerformed
+       try {
+        
+        double pricePerEggPesto = 190.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerEggPesto;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Egg Pesto", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Egg Pesto Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_EggPestoActionPerformed
+
+    private void mangocroissantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mangocroissantActionPerformed
+        try {
+        double pricePerMangoCroi = 180.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerMangoCroi;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Mango Croissant", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Mango Croissant Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_mangocroissantActionPerformed
+
+    private void buttercroissnatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttercroissnatActionPerformed
+        try {
+        double pricePerButterCroi = 180.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerButterCroi;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Butter Croissant", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Butter Croissant Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_buttercroissnatActionPerformed
+
+    private void cholatecroissantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cholatecroissantActionPerformed
+        try {
+        double pricePerChocoCroi = 200.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerChocoCroi;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Chocolate Croissant", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Chocolate Croissant Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_cholatecroissantActionPerformed
+
+    private void redvelvetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redvelvetActionPerformed
+        try {
+        double pricePerCupcake = 150.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricePerCupcake;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "Red Velvet Cupcake", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Red Velvet Cupcake Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_redvelvetActionPerformed
+
+    private void cm4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cm4ActionPerformed
+         try {
+        double pricecm4 = 355.0; 
+        
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricecm4;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                      %-8d ₱%7.2f\n", 
+            "CM6", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("CM4 Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_cm4ActionPerformed
+
+    private void cm6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cm6ActionPerformed
+        try {
+        double pricecm6 = 355.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricecm6;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "CM6", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("CM6 Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_cm6ActionPerformed
+
+    private void cm2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cm2ActionPerformed
+         try {
+        double pricecm2 = 355.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput); 
+
+        double totalPrice = quantity * pricecm2;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "CM2", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("CM2 Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_cm2ActionPerformed
+
+    private void c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c3ActionPerformed
+        try {
+        double pricecm3 = 355.0; 
+
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricecm3;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                       %-8d ₱%7.2f\n", 
+            "CM3", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("CM3 Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_c3ActionPerformed
+
+    private void cm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cm1ActionPerformed
+        try {
+        double pricecm1 = 355.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricecm1;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                        %-8d ₱%7.2f\n", 
+            "CM1", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("CM1 Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_cm1ActionPerformed
+
+    private void cm5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cm5ActionPerformed
+         try {
+        double pricecm5 = 355.0; 
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity for Egg Pesto:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);  
+
+        double totalPrice = quantity * pricecm5;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s                          %-8d ₱%7.2f\n", 
+            "CM5", quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("CM5 Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_cm5ActionPerformed
+
+    private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_txtTotalActionPerformed
+
+    private void txtAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAmountActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAmountActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         // TODO add your handling code here:
@@ -2069,6 +2835,378 @@ public class Menu extends javax.swing.JFrame {
 
         dispose();
     }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void caffe_americanoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caffe_americanoActionPerformed
+     try {
+
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 50.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 100.0; 
+        }
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; // Exit if user cancels
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Caffe Americano", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_caffe_americanoActionPerformed
+
+    private void jScrollPane2AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jScrollPane2AncestorAdded
+  
+    }//GEN-LAST:event_jScrollPane2AncestorAdded
+
+    private void receiptAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_receiptAncestorAdded
+
+    LocalDateTime now = LocalDateTime.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    String formattedDateTime = now.format(formatter);
+
+    JTextArea receipt = (JTextArea) evt.getSource();
+    receipt.setText(String.format(
+        "====================================\n" +
+        "    La Casa del Espresso Receipt   \n" +
+        "====================================\n" +
+        "Date: %s\n" + 
+        "====================================\n" +
+        "Product                           Size                      Qty          Price\n" +
+        "------------------------------------\n",
+        formattedDateTime
+    ));  
+    }//GEN-LAST:event_receiptAncestorAdded
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        try {
+
+        double payment = Double.parseDouble(txtAmount.getText());
+
+        if (payment < totalAmount) {
+            JOptionPane.showMessageDialog(this, "Insufficient payment. Please enter a valid amount.", "Payment Error", JOptionPane.ERROR_MESSAGE);
+            return; 
+        }
+
+        double change = payment - totalAmount;
+
+        receipt.append(String.format("\nTotal Amount: ₱%7.2f\n", totalAmount));
+        receipt.append(String.format("Payment:      ₱%7.2f\n", payment));
+        receipt.append(String.format("Change:       ₱%7.2f\n", change));
+        receipt.append("====================================\n");
+        receipt.append("Thank you for your order!\n");
+
+        totalAmount = 0.0; 
+        txtTotal.setText(""); 
+        txtAmount.setText(""); 
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid payment. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void NewOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewOrderActionPerformed
+    receipt.setText("");  
+    totalAmount = 0.0;
+    txtTotal.setText(""); 
+    txtAmount.setText(""); 
+
+    JOptionPane.showMessageDialog(this, "New Order Started!", "Order Notification", JOptionPane.INFORMATION_MESSAGE);
+
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    String currentDateAndTime = sdf.format(new Date());
+
+    receipt.append("====================================\n");
+    receipt.append("    La Casa del Espresso Receipt   \n");
+    receipt.append("====================================\n");
+    receipt.append("Date and Time: " + currentDateAndTime + "\n");  
+    receipt.append("====================================\n");
+    receipt.append("Product                  Size             Qty          Price\n");
+    receipt.append("------------------------------------\n");
+    }//GEN-LAST:event_NewOrderActionPerformed
+
+    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
+        DiningLocation dl = new DiningLocation();
+        dl.show();
+        
+        dispose();
+    }//GEN-LAST:event_backActionPerformed
+
+    private void remove_item2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_remove_item2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_remove_item2ActionPerformed
+
+    private void DineInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DineInActionPerformed
+      
+    }//GEN-LAST:event_DineInActionPerformed
+
+    private void TakeOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TakeOutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TakeOutActionPerformed
+
+    private void cappuccinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cappuccinoActionPerformed
+        try {
+
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 80.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 110.0; 
+        }
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Capuccino", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+
+    }//GEN-LAST:event_cappuccinoActionPerformed
+
+    private void flatWhiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flatWhiteActionPerformed
+      try {
+
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 150.0; 
+        }
+
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Flat White", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+
+    }//GEN-LAST:event_flatWhiteActionPerformed
+
+    private void HoneyAlmondActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HoneyAlmondActionPerformed
+        try {
+
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 85.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 110.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 180.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Honey Almond Milk", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+
+    }//GEN-LAST:event_HoneyAlmondActionPerformed
+
+    private void CaffeLatteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaffeLatteActionPerformed
+         try {
+            
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 80.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 110.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Caffe Latte", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_CaffeLatteActionPerformed
+
+    private void VanillaLatteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VanillaLatteActionPerformed
+         try {
+            
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 90.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 110.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Vanilla Latte", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_VanillaLatteActionPerformed
+
+    private void CaramelMacchiatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaramelMacchiatoActionPerformed
+         try {
+            
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 70.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 80.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 110.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; 
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Caramel Macchiato", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_CaramelMacchiatoActionPerformed
+
+    private void EspressoMacchiatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EspressoMacchiatoActionPerformed
+        try {
+            
+        String[] sizes = {"Grande - 16oz", "Venti - 20oz", "Trenta - 31oz"};
+        String size = (String) JOptionPane.showInputDialog(this, "Select cup size:", "Cup Size", JOptionPane.QUESTION_MESSAGE, null, sizes, sizes[0]);
+        if (size == null || size.isEmpty()) return; 
+
+        double pricePerCup = 0;
+        if (size.equals("Grande - 16oz")) {
+            pricePerCup = 60.0; 
+        } else if (size.equals("Venti - 20oz")) {
+            pricePerCup = 80.0; 
+        } else if (size.equals("Trenta - 31oz")) {
+            pricePerCup = 100.0; 
+        }
+    
+        String quantityInput = JOptionPane.showInputDialog(this, "Enter quantity:", "Quantity", JOptionPane.QUESTION_MESSAGE);
+        if (quantityInput == null || quantityInput.isEmpty()) return; // Exit if user cancels
+        int quantity = Integer.parseInt(quantityInput);
+
+        double totalPrice = quantity * pricePerCup;
+        totalAmount += totalPrice;
+        txtTotal.setText(String.format("%.2f", totalAmount));
+        receipt.append(String.format(
+            "%-24s %-16s %-8d ₱%7.2f\n", 
+            "Espresso Macchiato", size, quantity, totalPrice
+        ));
+        receipt.append("------------------------------------\n");
+        System.out.println("Price: " + totalPrice);
+
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(this, "Invalid quantity. Please enter a valid number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_EspressoMacchiatoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2106,57 +3244,56 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BrownSugar;
+    private javax.swing.JButton CaffeLatte;
+    private javax.swing.JButton CaffeVanilla;
+    private javax.swing.JButton CaramelCreame;
+    private javax.swing.JButton CaramelMacchiato;
+    private javax.swing.JButton ChocoCookieeCrumble;
     private javax.swing.JButton ComboMeals;
+    private javax.swing.JButton CrispandCreame;
+    private javax.swing.JButton DarkChoco;
+    private javax.swing.JRadioButton DineIn;
+    private javax.swing.JButton EggPesto;
+    private javax.swing.JButton EspressoMacchiato;
     private javax.swing.JButton Frapuccino;
+    private javax.swing.JButton HoneyAlmond;
     private javax.swing.JButton HotCoffee;
     private javax.swing.JButton IceCoffee;
+    private javax.swing.JButton IcedAmericano;
+    private javax.swing.JButton JavaChip;
+    private javax.swing.JButton LuxeCreamDelight;
     private javax.swing.JButton Milktea;
+    private javax.swing.JButton NewOrder;
     private javax.swing.JButton Pastries;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton StrawberryCreame;
+    private javax.swing.JButton SuenoDeMatcha;
+    private javax.swing.JRadioButton TakeOut;
+    private javax.swing.JButton VanillaLatte;
+    private javax.swing.JButton WhiteChocoCream;
+    private javax.swing.JButton back;
+    private javax.swing.JButton blueberry;
+    private javax.swing.JButton buttercroissnat;
+    private javax.swing.JButton c3;
+    private javax.swing.JButton caffe_americano;
+    private javax.swing.JButton cappuccino;
+    private javax.swing.JButton chocolateChip;
+    private javax.swing.JButton chocolatebrownies;
+    private javax.swing.JButton cholatecroissant;
+    private javax.swing.JButton cm1;
+    private javax.swing.JButton cm2;
+    private javax.swing.JButton cm4;
+    private javax.swing.JButton cm5;
+    private javax.swing.JButton cm6;
+    private javax.swing.JButton flatWhite;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
-    private javax.swing.JButton jButton35;
-    private javax.swing.JButton jButton36;
-    private javax.swing.JButton jButton37;
-    private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton39;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton40;
-    private javax.swing.JButton jButton41;
-    private javax.swing.JButton jButton42;
-    private javax.swing.JButton jButton43;
-    private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton45;
     private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -2360,7 +3497,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
@@ -2392,13 +3528,17 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JButton mangocroissant;
+    private javax.swing.JButton mocha;
+    private javax.swing.JTextArea receipt;
+    private javax.swing.JButton redvelvet;
+    private javax.swing.JButton remove_item2;
+    private javax.swing.JButton santaCookiee;
+    private javax.swing.JTextField txtAmount;
+    private javax.swing.JTextField txtTotal;
+    private javax.swing.JButton xmastreecookiee;
     // End of variables declaration//GEN-END:variables
 }

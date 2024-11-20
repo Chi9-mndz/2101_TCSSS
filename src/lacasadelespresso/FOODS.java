@@ -50,7 +50,7 @@ public class FOODS extends javax.swing.JFrame {
         jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 190, 50));
 
         jButton5.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
-        jButton5.setText("PAY");
+        jButton5.setText("ADD TO LIST");
         jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.gray));
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 110, 50));
 
