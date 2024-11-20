@@ -1,0 +1,97 @@
+import java.sql.*;
+import java.util.ArrayList;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import javax.swing.*;
+
+public class CoffeeShop {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/coffee_shop_db"; // Your DB URL
+        String user = "root"; // Database username
+        String password = ""; // Database password
+        
+        // Create a simple GUI for user input (using Swing)
+        JFrame frame = new JFrame("Coffee Shop Receipt");
+        JTextField productNameField = new JTextField(20);
+        JTextField quantityField = new JTextField(10);
+        JTextField priceField = new JTextField(10);
+        JButton addItemButton = new JButton("Add Item");
+        JButton saveButton = new JButton("Save Receipt");
+        JTextArea receiptArea = new JTextArea(10, 30);
+        
+        frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
+        frame.add(new JLabel("Product Name:"));
+        frame.add(productNameField);
+        frame.add(new JLabel("Quantity:"));
+        frame.add(quantityField);
+        frame.add(new JLabel("Price per unit:"));
+        frame.add(priceField);
+        frame.add(addItemButton);
+        frame.add(receiptArea);
+        frame.add(saveButton);
+        
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+        
+        ArrayList<String> products = new ArrayList<>();
+        ArrayList<Double> prices = new ArrayList<>();
+        
+        // When the user adds an item
+        addItemButton.addActionListener(e -> {
+            String productName = productNameField.getText();
+            int quantity = Integer.parseInt(quantityField.getText());
+            double price = Double.parseDouble(priceField.getText());
+            double totalPrice = quantity * price;
+            
+            products.add(productName + " (x" + quantity + "): $" + totalPrice);
+            prices.add(totalPrice);
+            
+            // Display added products in the receipt area
+            receiptArea.setText("");
+            double totalReceipt = 0;
+            for (String product : products) {
+                receiptArea.append(product + "\n");
+                totalReceipt += prices.get(products.indexOf(product));
+            }
+            receiptArea.append("\nTotal: $" + totalReceipt);
+        });
+        
+        // When the user saves the receipt
+        saveButton.addActionListener(e -> {
+            // Get current date and time
+            LocalDate date = LocalDate.now();
+            LocalTime time = LocalTime.now();
+            
+            // Establish database connection
+            try (Connection conn = DriverManager.getConnection(url, user, password)) {
+                // Start transaction (Receipt)
+                String transactionSql = "INSERT INTO coffee_shop_receipts (product_name, quantity, price, total_price, date, time, transaction_id) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                
+                int transactionId = (int) (Math.random() * 1000); // Generate a unique transaction ID
+                
+                for (int i = 0; i < products.size(); i++) {
+                    String product = products.get(i);
+                    String[] parts = product.split(":");
+                    String productName = parts[0].split("\\(")[0].trim();
+                    int quantity = Integer.parseInt(parts[0].split("x")[1].trim());
+                    double totalPrice = prices.get(i);
+                    
+                    try (PreparedStatement stmt = conn.prepareStatement(transactionSql)) {
+                        stmt.setString(1, productName);
+                        stmt.setInt(2, quantity);
+                        stmt.setDouble(3, totalPrice / quantity); // Store the unit price
+                        stmt.setDouble(4, totalPrice);
+                        stmt.setDate(5, java.sql.Date.valueOf(date));
+                        stmt.setTime(6, java.sql.Time.valueOf(time));
+                        stmt.setInt(7, transactionId);  // Assign the same transaction_id to all products
+                        stmt.executeUpdate();
+                    }
+                }
+                
+                JOptionPane.showMessageDialog(frame, "Receipt saved successfully!");
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(frame, "Error: " + ex.getMessage());
+            }
+        });
+    }
+}
