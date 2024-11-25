@@ -275,8 +275,8 @@ public class Front extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        DiningLocation dl = new DiningLocation();
-        dl.show();
+        Menu m = new Menu();
+        m.show();
         
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -284,16 +284,16 @@ public class Front extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         
-        DiningLocation dl = new DiningLocation();
-        dl.show();
+        Menu m = new Menu();
+        m.show();
         
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        DiningLocation dl = new DiningLocation();
-        dl.show();
+        Menu m = new Menu();
+        m.show();
         
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
