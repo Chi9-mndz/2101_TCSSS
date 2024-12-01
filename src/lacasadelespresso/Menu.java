@@ -17,6 +17,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import javax.swing.JOptionPane;
+import java.sql.Statement;
 
 public class Menu extends javax.swing.JFrame {
 
@@ -519,10 +520,8 @@ private double totalprice;
         jLabel217 = new javax.swing.JLabel();
         jLabel218 = new javax.swing.JLabel();
         jLabel219 = new javax.swing.JLabel();
-        jLabel220 = new javax.swing.JLabel();
         Payment = new javax.swing.JButton();
         txtTotal = new javax.swing.JTextField();
-        jLabel224 = new javax.swing.JLabel();
         jButton46 = new javax.swing.JButton();
         removeButton = new javax.swing.JButton();
         PrintReceipt = new javax.swing.JButton();
@@ -2816,10 +2815,6 @@ private double totalprice;
 
         jPanel3.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 790, 700));
 
-        jLabel220.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
-        jLabel220.setText("Customer's Name:");
-        jPanel3.add(jLabel220, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         Payment.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
         Payment.setText("PAY");
         Payment.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.gray, java.awt.Color.lightGray));
@@ -2828,20 +2823,15 @@ private double totalprice;
                 PaymentActionPerformed(evt);
             }
         });
-        jPanel3.add(Payment, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 740, 170, -1));
+        jPanel3.add(Payment, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 740, 290, -1));
 
-        txtTotal.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        txtTotal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtTotalActionPerformed(evt);
             }
         });
-        jPanel3.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 630, 190, 50));
-
-        jLabel224.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        jLabel224.setForeground(new java.awt.Color(223, 216, 205));
-        jLabel224.setText("TOTAL: ");
-        jPanel3.add(jLabel224, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 650, 120, 30));
+        jPanel3.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 630, 270, 50));
 
         jButton46.setBackground(new java.awt.Color(77, 0, 0));
         jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/setting-lines.png"))); // NOI18N
@@ -2862,7 +2852,7 @@ private double totalprice;
                 removeButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(removeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 700, 110, 30));
+        jPanel3.add(removeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 700, 110, 30));
 
         PrintReceipt.setBackground(new java.awt.Color(246, 244, 238));
         PrintReceipt.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 1, 12)); // NOI18N
@@ -2873,7 +2863,7 @@ private double totalprice;
                 PrintReceiptActionPerformed(evt);
             }
         });
-        jPanel3.add(PrintReceipt, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 700, 100, 30));
+        jPanel3.add(PrintReceipt, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 700, 110, 30));
 
         NewOrder1.setBackground(new java.awt.Color(246, 244, 238));
         NewOrder1.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 1, 12)); // NOI18N
@@ -2884,7 +2874,7 @@ private double totalprice;
                 NewOrder1ActionPerformed(evt);
             }
         });
-        jPanel3.add(NewOrder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 700, 110, 30));
+        jPanel3.add(NewOrder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 700, 120, 30));
         jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 130, -1, -1));
         jPanel3.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 150, -1, -1));
 
@@ -3006,9 +2996,9 @@ private double totalprice;
     }// </editor-fold>//GEN-END:initComponents
 
     private void NewOrder1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewOrder1ActionPerformed
- // Add an ActionListener to the "New Transaction" button
-NewOrder1.addActionListener(e -> {
-    // Prompt to confirm starting a new transaction
+ 
+    NewOrder1.addActionListener(e -> {
+   
     int choice = JOptionPane.showConfirmDialog(
         null,
         "Transact Another Order?",
@@ -3021,28 +3011,27 @@ NewOrder1.addActionListener(e -> {
         DefaultTableModel receiptModel = (DefaultTableModel) receiptTable.getModel();
         receiptModel.setRowCount(0); // Clears all data in the receipt table
 
-        // Clear all rows from the payment table
+       
         DefaultTableModel paymentTableModel = (DefaultTableModel) paymentTable.getModel();
-        paymentTableModel.setRowCount(0); // Clears all data in the payment table
+        paymentTableModel.setRowCount(0);
 
-        // Reset total amount and update total text field
-        totalAmount = 0.0; // Reset the total amount variable
-        txtTotal.setText(""); // Clear the total amount display field
+        // Reset total text field
+        txtTotal.setText(""); 
 
         JOptionPane.showMessageDialog(null, "New Order Started!", "Success", JOptionPane.INFORMATION_MESSAGE);
     } else if (choice == JOptionPane.NO_OPTION) {
-        // If the user cancels starting a new transaction, display a message
+        
         JOptionPane.showMessageDialog(null, "You cancelled another transaction.", "Cancellation", JOptionPane.INFORMATION_MESSAGE);
     }
 });
     }//GEN-LAST:event_NewOrder1ActionPerformed
 
     private void PrintReceiptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrintReceiptActionPerformed
-try {
+    try {
             PrinterJob printerJob = PrinterJob.getPrinterJob();
             printerJob.setPrintable(new Printable() {
                 public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws PrinterException {
-                    if (pageIndex > 0) {  // If there's more than one page, stop printing
+                    if (pageIndex > 0) {  
                         return NO_SUCH_PAGE;
                     }
 
@@ -3072,47 +3061,43 @@ try {
     }//GEN-LAST:event_PrintReceiptActionPerformed
 
     private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
-    String orderToRemove = JOptionPane.showInputDialog(this, "Enter the product name or order to remove:");
-    if (orderToRemove != null && !orderToRemove.isEmpty()) {
-        DefaultTableModel receiptModel = (DefaultTableModel) receiptTable.getModel();
-        boolean orderFound = false;
-        double totalPriceToRemove = 0.0;
-        
-        for (int row = 0; row < receiptModel.getRowCount(); row++) {
-            Object product = receiptModel.getValueAt(row, 0); 
-            if (product != null && product.toString().equalsIgnoreCase(orderToRemove)) {
-               
-                totalPriceToRemove = (double) receiptModel.getValueAt(row, 3); 
+  // Get the selected row from the table
+int selectedRow = receiptTable.getSelectedRow();
 
-                int confirmation = JOptionPane.showConfirmDialog(
-                        this,
-                        "Are you sure you want to remove this order: " + orderToRemove + "?",
-                        "Confirm Removal",
-                        JOptionPane.YES_NO_OPTION
-                );
+if (selectedRow != -1) { // Check if a row is selected
+    DefaultTableModel receiptModel = (DefaultTableModel) receiptTable.getModel();
+    
+    // Get the product name and price from the selected row
+    String productName = receiptModel.getValueAt(selectedRow, 0).toString();
+    double productPrice = (double) receiptModel.getValueAt(selectedRow, 3);
 
-                if (confirmation == JOptionPane.YES_OPTION) {
-                 
-                    receiptModel.removeRow(row);
-                    
-                    totalAmount -= totalPriceToRemove;
+    // Ask for confirmation
+    int confirmation = JOptionPane.showConfirmDialog(
+            this,
+            "Are you sure you want to remove this order: " + productName + "?",
+            "Confirm Removal",
+            JOptionPane.YES_NO_OPTION
+    );
 
-                    updatePaymentTable();
+    if (confirmation == JOptionPane.YES_OPTION) {
+        // Remove the selected row
+        receiptModel.removeRow(selectedRow);
 
-                    JOptionPane.showMessageDialog(this, "Order removed successfully!");
-                } else {
-                    JOptionPane.showMessageDialog(this, "Order removal canceled.");
-                }
-                
-                orderFound = true;
-                break;
-            }
-        }
+        // Update the total amount
+        totalAmount -= productPrice;
 
-        if (!orderFound) {
-            JOptionPane.showMessageDialog(this, "Order not found in receipt.", "Error", JOptionPane.ERROR_MESSAGE);
-        }
+        // Update the payment table or UI
+        updatePaymentTable();
+
+        JOptionPane.showMessageDialog(this, "Order removed successfully!");
+    } else {
+        JOptionPane.showMessageDialog(this, "Order removal canceled.");
     }
+} else {
+    JOptionPane.showMessageDialog(this, "Please select an order to remove.", "Error", JOptionPane.ERROR_MESSAGE);
+}
+
+
     }//GEN-LAST:event_removeButtonActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
@@ -3126,13 +3111,13 @@ try {
     private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTotalActionPerformed
-
+    
     private void PaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PaymentActionPerformed
          Connection conn = null;
         PreparedStatement pstmt = null;
- Payment.addActionListener(e -> {
+    Payment.addActionListener(e -> {
     try {
-        // Calculate the subtotal dynamically based on receipt items (not hardcoded)
+        // Calculate the subtotal dynamically based on receipt items
         double subtotal = 0.0;
         for (int row = 0; row < receiptTable.getRowCount(); row++) {
             Object priceObj = receiptTable.getValueAt(row, 3); // "Price" column
@@ -3149,12 +3134,12 @@ try {
             }
         }
 
-        // Calculate tax
-        double taxRate = 0.12; // 12% tax rate
+      
+        double taxRate = 0.12; 
         double tax = subtotal * taxRate;
-        double totalWithTax = subtotal + tax; // Total amount including tax
+        double totalWithTax = subtotal + tax; 
 
-        // Prompt for Payment Method
+    
         String[] paymentMethods = { "Cash", "GCash", "Credit Card" };
         String paymentMethod = (String) JOptionPane.showInputDialog(
             this,
@@ -3171,14 +3156,12 @@ try {
             return;
         }
 
-        // Ask for Customer's Name
         String customerName = JOptionPane.showInputDialog(this, "Enter Customer Name:");
         if (customerName == null || customerName.trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Customer name is required.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
-        // Prompt for Payment Amount
         double payment = 0;
         boolean validPayment = false;
 
@@ -3201,11 +3184,9 @@ try {
             }
         }
 
-        // Calculate Change (even if payment == total, it will show ₱0.00 as change)
         double change = payment - totalWithTax;
 
-        // Optional: Prompt for Reference if payment is GCash or Credit Card
-        String reference = " ";
+              String reference = " ";
         if (paymentMethod.equals("GCash") || paymentMethod.equals("Credit Card")) {
             reference = JOptionPane.showInputDialog(this, "Enter Transaction/Reference Number:");
             if (reference == null || reference.trim().isEmpty()) {
@@ -3228,24 +3209,27 @@ try {
         String dbPassword = "";
 
         try (Connection connection = DriverManager.getConnection(dbURL, dbUser, dbPassword)) {
-            // Insert payment details
-            String paymentQuery = "INSERT INTO payment (SubTotal, Tax, TotalAmount, PaymentMethod, Reference, Payment, `Change`, PaymentDate) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-            PreparedStatement paymentPstmt = connection.prepareStatement(paymentQuery);
+          
+            String receiptQuery = "INSERT INTO Receipt (DateOfReceipt) VALUES (?)";
+            PreparedStatement receiptPstmt = connection.prepareStatement(receiptQuery, Statement.RETURN_GENERATED_KEYS);
+            receiptPstmt.setTimestamp(1, new Timestamp(System.currentTimeMillis()));
 
-            paymentPstmt.setDouble(1, subtotal);
-            paymentPstmt.setDouble(2, tax);
-            paymentPstmt.setDouble(3, totalWithTax);
-            paymentPstmt.setString(4, paymentMethod);
-            paymentPstmt.setString(5, reference);
-            paymentPstmt.setDouble(6, payment);
-            paymentPstmt.setDouble(7, change);
-            paymentPstmt.setTimestamp(8, new Timestamp(System.currentTimeMillis()));
+            receiptPstmt.executeUpdate();
 
-            paymentPstmt.executeUpdate();
+            // Retrieve the generated ReceiptID
+            ResultSet generatedKeys = receiptPstmt.getGeneratedKeys();
+            int receiptID = 0;
+            if (generatedKeys.next()) {
+                receiptID = generatedKeys.getInt(1);
+            }
 
-            // Insert receipt details
-            String receiptQuery = "INSERT INTO receipt (ProductName, Size, Quantity, Price, DiningLocation, OrderDate) VALUES (?, ?, ?, ?, ?, ?)";
-            PreparedStatement receiptPstmt = connection.prepareStatement(receiptQuery);
+            if (receiptID == 0) {
+                throw new SQLException("Failed to retrieve generated ReceiptID.");
+            }
+
+           
+            String orderQuery = "INSERT INTO `order` (ReceiptID, ProductName, Size, Quantity, Price, DiningLocation) VALUES (?, ?, ?, ?, ?, ?)";
+            PreparedStatement orderPstmt = connection.prepareStatement(orderQuery);
 
             for (int row = 0; row < receiptTable.getRowCount(); row++) {
                 String productName = receiptTable.getValueAt(row, 0).toString();
@@ -3254,33 +3238,60 @@ try {
                 double price = Double.parseDouble(receiptTable.getValueAt(row, 3).toString());
                 String diningLocation = receiptTable.getValueAt(row, 4).toString();
 
-                receiptPstmt.setString(1, productName);
-                receiptPstmt.setString(2, size);
-                receiptPstmt.setInt(3, quantity);
-                receiptPstmt.setDouble(4, price);
-                receiptPstmt.setString(5, diningLocation);
-                receiptPstmt.setTimestamp(6, new Timestamp(System.currentTimeMillis()));
-
-                receiptPstmt.addBatch();
+                orderPstmt.setInt(1, receiptID);
+                orderPstmt.setString(2, productName);
+                orderPstmt.setString(3, size);
+                orderPstmt.setInt(4, quantity);
+                orderPstmt.setDouble(5, price);
+                orderPstmt.setString(6, diningLocation);
+                orderPstmt.addBatch();
             }
 
-            receiptPstmt.executeBatch();
+            orderPstmt.executeBatch();
+            String productQuery = "UPDATE products SET quantity = quantity - ? WHERE product_name = ?";
+            PreparedStatement inventoryPstmt = connection.prepareStatement(productQuery);
 
-            // Display success message
-            JOptionPane.showMessageDialog(this, "Payment and Receipt successfully recorded in the database.", "Database Success", JOptionPane.INFORMATION_MESSAGE);
+            for (int row = 0; row < receiptTable.getRowCount(); row++) {
+                String product_name = receiptTable.getValueAt(row, 0).toString();
+                int quantity = Integer.parseInt(receiptTable.getValueAt(row, 2).toString());
+
+                inventoryPstmt.setInt(1, quantity);
+                inventoryPstmt.setString(2, product_name);
+                inventoryPstmt.addBatch();
+            }
+
+            inventoryPstmt.executeBatch();
+
+          
+          String paymentQuery = "INSERT INTO payment (ReceiptID, CustomerName, SubTotal, Tax, TotalWithTax, PaymentMethod, Reference, Payment, `Change`, PaymentDate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    PreparedStatement paymentpstmt = connection.prepareStatement(paymentQuery);
+
+    paymentpstmt.setInt(1, receiptID);                       
+    paymentpstmt.setString(2, customerName);                
+    paymentpstmt.setDouble(3, subtotal);                  
+    paymentpstmt.setDouble(4, tax);                        
+    paymentpstmt.setDouble(5, totalWithTax);             
+    paymentpstmt.setString(6, paymentMethod);           
+    paymentpstmt.setString(7, reference);                  
+    paymentpstmt.setDouble(8, payment);                  
+    paymentpstmt.setDouble(9, change);                     
+    paymentpstmt.setTimestamp(10, new Timestamp(System.currentTimeMillis())); 
+
+    paymentpstmt.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Payment successfully recorded in the database.", "Database Success", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Payment successful!\nThank you, " + customerName + ".", "Payment Success", JOptionPane.INFORMATION_MESSAGE);
 
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             ex.printStackTrace();
         }
 
-        // Display success message
-        JOptionPane.showMessageDialog(this, "Payment successful!\nThank you, " + customerName + ".", "Payment Success", JOptionPane.INFORMATION_MESSAGE);
-
     } catch (Exception ex) {
         JOptionPane.showMessageDialog(this, "An error occurred: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
     }
 });
+
 
 
     }//GEN-LAST:event_PaymentActionPerformed
@@ -5496,10 +5507,8 @@ try {
     private javax.swing.JLabel jLabel218;
     private javax.swing.JLabel jLabel219;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel220;
     private javax.swing.JLabel jLabel221;
     private javax.swing.JLabel jLabel222;
-    private javax.swing.JLabel jLabel224;
     private javax.swing.JLabel jLabel225;
     private javax.swing.JLabel jLabel226;
     private javax.swing.JLabel jLabel227;

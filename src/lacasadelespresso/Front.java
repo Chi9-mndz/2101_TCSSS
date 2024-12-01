@@ -259,7 +259,7 @@ public class Front extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jPanel5);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1220, 490));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1220, 500));
 
         pack();
         setLocationRelativeTo(null);
